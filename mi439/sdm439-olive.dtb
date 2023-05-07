@@ -1120,7 +1120,7 @@
 	};
 
 	qcom,battery-data {
-		phandle = <0xfd>;
+		phandle = <0xf8>;
 		qcom,batt-id-range-pct = <0x0a>;
 
 		qcom,olive-gy-5000mah {
@@ -1454,14 +1454,14 @@
 		adsp_fw_region@0 {
 			compatible = "removed-dma-pool";
 			no-map;
-			phandle = <0x11c>;
+			phandle = <0x118>;
 			reg = <0x00 0x8bd00000 0x00 0x1800000>;
 		};
 
 		adsp_region@0 {
 			alignment = <0x00 0x400000>;
 			compatible = "shared-dma-pool";
-			phandle = <0x101>;
+			phandle = <0xfc>;
 			reusable;
 			size = <0x00 0x400000>;
 		};
@@ -1485,7 +1485,7 @@
 		modem_region@0 {
 			compatible = "removed-dma-pool";
 			no-map;
-			phandle = <0x118>;
+			phandle = <0x114>;
 			reg = <0x00 0x86800000 0x00 0x5500000>;
 		};
 
@@ -1537,7 +1537,7 @@
 			alignment = <0x00 0x400000>;
 			alloc-ranges = <0x00 0x80000000 0x00 0x10000000>;
 			compatible = "shared-dma-pool";
-			phandle = <0x120>;
+			phandle = <0x11c>;
 			reusable;
 			size = <0x00 0x800000>;
 		};
@@ -1545,7 +1545,7 @@
 		wcnss_fw_region@0 {
 			compatible = "removed-dma-pool";
 			no-map;
-			phandle = <0x11f>;
+			phandle = <0x11b>;
 			reg = <0x00 0x8d500000 0x00 0x700000>;
 		};
 	};
@@ -1682,7 +1682,7 @@
 			mas-crypto {
 				cell-id = <0x37>;
 				label = "mas-crypto";
-				phandle = <0x119>;
+				phandle = <0x115>;
 				qcom,agg-ports = <0x01>;
 				qcom,ap-owned;
 				qcom,bus-dev = <0x34>;
@@ -2542,7 +2542,7 @@
 
 		apc-mem-acc-regulator {
 			compatible = "qcom,mem-acc-regulator";
-			phandle = <0x128>;
+			phandle = <0x124>;
 			qcom,acc-init-reg-config = <0x01 0xff>;
 			qcom,acc-reg-addr-list = <0x1942138 0x1942130 0x1946004>;
 			qcom,boot-acc-corner = <0x01>;
@@ -2583,8 +2583,8 @@
 			port {
 
 				endpoint {
-					phandle = <0x1a4>;
-					remote-endpoint = <0x1bb>;
+					phandle = <0x1a0>;
+					remote-endpoint = <0x1b7>;
 				};
 			};
 		};
@@ -2595,8 +2595,8 @@
 			clocks = <0x25 0xd454019f>;
 			compatible = "qcom,audio-ref-clk";
 			phandle = <0xbb>;
-			pinctrl-0 = <0x172>;
-			pinctrl-1 = <0x172>;
+			pinctrl-0 = <0x16e>;
+			pinctrl-1 = <0x16e>;
 			pinctrl-names = "active\0sleep";
 			qcom,audio-ref-clk-gpio = <0x76 0x01 0x00>;
 			qcom,node_has_rpm_clock;
@@ -2720,7 +2720,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "qcom,coresight-csr";
 			coresight-name = "coresight-csr";
-			phandle = <0x18d>;
+			phandle = <0x189>;
 			qcom,blk-size = <0x01>;
 			qcom,hwctrl-set-support;
 			qcom,set-byte-cntr-support;
@@ -2735,7 +2735,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti0";
-			phandle = <0x18e>;
+			phandle = <0x18a>;
 			reg = <0x6010000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2746,7 +2746,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti1";
-			phandle = <0x2d2>;
+			phandle = <0x2d1>;
 			reg = <0x6011000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2757,7 +2757,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti2";
-			phandle = <0x2d3>;
+			phandle = <0x2d2>;
 			reg = <0x6012000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2768,7 +2768,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti3";
-			phandle = <0x2d4>;
+			phandle = <0x2d3>;
 			reg = <0x6013000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2779,7 +2779,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti4";
-			phandle = <0x2d5>;
+			phandle = <0x2d4>;
 			reg = <0x6014000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2790,7 +2790,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti5";
-			phandle = <0x2d6>;
+			phandle = <0x2d5>;
 			reg = <0x6015000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2801,7 +2801,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti6";
-			phandle = <0x2d7>;
+			phandle = <0x2d6>;
 			reg = <0x6016000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2812,7 +2812,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti7";
-			phandle = <0x2d8>;
+			phandle = <0x2d7>;
 			reg = <0x6017000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2823,7 +2823,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti8";
-			phandle = <0x18f>;
+			phandle = <0x18b>;
 			reg = <0x6018000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2834,7 +2834,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti9";
-			phandle = <0x2d9>;
+			phandle = <0x2d8>;
 			reg = <0x6019000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2845,7 +2845,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti10";
-			phandle = <0x2da>;
+			phandle = <0x2d9>;
 			reg = <0x601a000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2856,7 +2856,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti11";
-			phandle = <0x2db>;
+			phandle = <0x2da>;
 			reg = <0x601b000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2867,7 +2867,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti12";
-			phandle = <0x2dc>;
+			phandle = <0x2db>;
 			reg = <0x601c000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2878,7 +2878,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti13";
-			phandle = <0x2dd>;
+			phandle = <0x2dc>;
 			reg = <0x601d000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2889,7 +2889,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti14";
-			phandle = <0x2de>;
+			phandle = <0x2dd>;
 			reg = <0x601e000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2900,7 +2900,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti15";
-			phandle = <0x2df>;
+			phandle = <0x2de>;
 			reg = <0x601f000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2911,7 +2911,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti-rpm-cpu0";
-			phandle = <0x2ec>;
+			phandle = <0x2eb>;
 			reg = <0x610c000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2922,7 +2922,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti-modem-cpu0";
-			phandle = <0x2e8>;
+			phandle = <0x2e7>;
 			reg = <0x6124000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2933,7 +2933,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti-video-cpu0";
-			phandle = <0x2e9>;
+			phandle = <0x2e8>;
 			reg = <0x6134000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2944,7 +2944,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti-wcn-cpu0";
-			phandle = <0x2ea>;
+			phandle = <0x2e9>;
 			reg = <0x6139000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2955,7 +2955,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti-audio-cpu0";
-			phandle = <0x2eb>;
+			phandle = <0x2ea>;
 			reg = <0x613c000 0x1000>;
 			reg-names = "cti-base";
 		};
@@ -2967,7 +2967,7 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti-cpu4";
 			cpu = <0x02>;
-			phandle = <0x2e4>;
+			phandle = <0x2e3>;
 			qcom,cti-save;
 			reg = <0x6198000 0x1000>;
 			reg-names = "cti-base";
@@ -2980,7 +2980,7 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti-cpu5";
 			cpu = <0x03>;
-			phandle = <0x2e5>;
+			phandle = <0x2e4>;
 			qcom,cti-save;
 			reg = <0x6199000 0x1000>;
 			reg-names = "cti-base";
@@ -2993,7 +2993,7 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti-cpu6";
 			cpu = <0x04>;
-			phandle = <0x2e6>;
+			phandle = <0x2e5>;
 			qcom,cti-save;
 			reg = <0x619a000 0x1000>;
 			reg-names = "cti-base";
@@ -3006,7 +3006,7 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti-cpu7";
 			cpu = <0x05>;
-			phandle = <0x2e7>;
+			phandle = <0x2e6>;
 			qcom,cti-save;
 			reg = <0x619b000 0x1000>;
 			reg-names = "cti-base";
@@ -3019,7 +3019,7 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti-cpu0";
 			cpu = <0x06>;
-			phandle = <0x2e0>;
+			phandle = <0x2df>;
 			qcom,cti-save;
 			reg = <0x61b8000 0x1000>;
 			reg-names = "cti-base";
@@ -3032,7 +3032,7 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti-cpu1";
 			cpu = <0x07>;
-			phandle = <0x2e1>;
+			phandle = <0x2e0>;
 			qcom,cti-save;
 			reg = <0x61b9000 0x1000>;
 			reg-names = "cti-base";
@@ -3045,7 +3045,7 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti-cpu2";
 			cpu = <0x08>;
-			phandle = <0x2e2>;
+			phandle = <0x2e1>;
 			qcom,cti-save;
 			reg = <0x61ba000 0x1000>;
 			reg-names = "cti-base";
@@ -3058,7 +3058,7 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-cti-cpu3";
 			cpu = <0x09>;
-			phandle = <0x2e3>;
+			phandle = <0x2e2>;
 			qcom,cti-save;
 			reg = <0x61bb000 0x1000>;
 			reg-names = "cti-base";
@@ -3069,7 +3069,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "qcom,coresight-dbgui";
 			coresight-name = "coresight-dbgui";
-			phandle = <0x2ed>;
+			phandle = <0x2ec>;
 			qcom,dbgui-addr-offset = <0x30>;
 			qcom,dbgui-data-offset = <0x130>;
 			qcom,dbgui-size = <0x40>;
@@ -3079,8 +3079,8 @@
 			port {
 
 				endpoint {
-					phandle = <0x19d>;
-					remote-endpoint = <0x1bd>;
+					phandle = <0x199>;
+					remote-endpoint = <0x1b9>;
 				};
 			};
 		};
@@ -3108,19 +3108,19 @@
 			cci-cpufreq {
 				cpu-to-dev-map-0 = <0x13ec00 0x61a80 0x16da00 0x61a80 0x1a1300 0x82208 0x1b8a00 0x8ca00 0x1de200 0x8ca00 0x1ec300 0x8ca00>;
 				cpu-to-dev-map-4 = <0xbb800 0x61a80 0xf3c00 0x61a80 0x11df00 0x61a80 0x13ec00 0x82208 0x164400 0x8ca00>;
-				target-dev = <0xec>;
+				target-dev = <0xe7>;
 			};
 
 			cpubw-cpufreq {
 				cpu-to-dev-map-0 = <0x13ec00 0x13bd 0x16da00 0x1650 0x1a1300 0x192d 0x1b8a00 0x1bc0 0x1de200 0x1bc0 0x1ec300 0x1bc0>;
 				cpu-to-dev-map-4 = <0xbb800 0xb71 0xf3c00 0x13bd 0x11df00 0x1650 0x13ec00 0x17bf 0x164400 0x1bc0>;
-				target-dev = <0xeb>;
+				target-dev = <0xe6>;
 			};
 
 			mincpubw-cpufreq {
 				cpu-to-dev-map-0 = <0x13ec00 0xb71 0x1b8a00 0x1650>;
 				cpu-to-dev-map-4 = <0x11df00 0xb71 0x164400 0x1650>;
-				target-dev = <0xed>;
+				target-dev = <0xe8>;
 			};
 		};
 
@@ -3232,15 +3232,15 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-etm4";
 			cpu = <0x02>;
-			phandle = <0x2c9>;
+			phandle = <0x2c8>;
 			qcom,tupwr-disable;
 			reg = <0x619c000 0x1000>;
 
 			port {
 
 				endpoint {
-					phandle = <0x1a8>;
-					remote-endpoint = <0x1b0>;
+					phandle = <0x1a4>;
+					remote-endpoint = <0x1ac>;
 				};
 			};
 		};
@@ -3252,15 +3252,15 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-etm5";
 			cpu = <0x03>;
-			phandle = <0x2ca>;
+			phandle = <0x2c9>;
 			qcom,tupwr-disable;
 			reg = <0x619d000 0x1000>;
 
 			port {
 
 				endpoint {
-					phandle = <0x1a9>;
-					remote-endpoint = <0x1b1>;
+					phandle = <0x1a5>;
+					remote-endpoint = <0x1ad>;
 				};
 			};
 		};
@@ -3272,15 +3272,15 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-etm6";
 			cpu = <0x04>;
-			phandle = <0x2cb>;
+			phandle = <0x2ca>;
 			qcom,tupwr-disable;
 			reg = <0x619e000 0x1000>;
 
 			port {
 
 				endpoint {
-					phandle = <0x1aa>;
-					remote-endpoint = <0x1b2>;
+					phandle = <0x1a6>;
+					remote-endpoint = <0x1ae>;
 				};
 			};
 		};
@@ -3292,15 +3292,15 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-etm7";
 			cpu = <0x05>;
-			phandle = <0x2cc>;
+			phandle = <0x2cb>;
 			qcom,tupwr-disable;
 			reg = <0x619f000 0x1000>;
 
 			port {
 
 				endpoint {
-					phandle = <0x1ab>;
-					remote-endpoint = <0x1b3>;
+					phandle = <0x1a7>;
+					remote-endpoint = <0x1af>;
 				};
 			};
 		};
@@ -3312,15 +3312,15 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-etm0";
 			cpu = <0x06>;
-			phandle = <0x2cd>;
+			phandle = <0x2cc>;
 			qcom,tupwr-disable;
 			reg = <0x61bc000 0x1000>;
 
 			port {
 
 				endpoint {
-					phandle = <0x1ac>;
-					remote-endpoint = <0x1b4>;
+					phandle = <0x1a8>;
+					remote-endpoint = <0x1b0>;
 				};
 			};
 		};
@@ -3332,15 +3332,15 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-etm1";
 			cpu = <0x07>;
-			phandle = <0x2ce>;
+			phandle = <0x2cd>;
 			qcom,tupwr-disable;
 			reg = <0x61bd000 0x1000>;
 
 			port {
 
 				endpoint {
-					phandle = <0x1ad>;
-					remote-endpoint = <0x1b5>;
+					phandle = <0x1a9>;
+					remote-endpoint = <0x1b1>;
 				};
 			};
 		};
@@ -3352,15 +3352,15 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-etm2";
 			cpu = <0x08>;
-			phandle = <0x2cf>;
+			phandle = <0x2ce>;
 			qcom,tupwr-disable;
 			reg = <0x61be000 0x1000>;
 
 			port {
 
 				endpoint {
-					phandle = <0x1ae>;
-					remote-endpoint = <0x1b6>;
+					phandle = <0x1aa>;
+					remote-endpoint = <0x1b2>;
 				};
 			};
 		};
@@ -3372,15 +3372,15 @@
 			compatible = "arm,primecell";
 			coresight-name = "coresight-etm3";
 			cpu = <0x09>;
-			phandle = <0x2d0>;
+			phandle = <0x2cf>;
 			qcom,tupwr-disable;
 			reg = <0x61bf000 0x1000>;
 
 			port {
 
 				endpoint {
-					phandle = <0x1af>;
-					remote-endpoint = <0x1b7>;
+					phandle = <0x1ab>;
+					remote-endpoint = <0x1b3>;
 				};
 			};
 		};
@@ -3391,7 +3391,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-funnel-in0";
-			phandle = <0x2c3>;
+			phandle = <0x2c2>;
 			reg = <0x6021000 0x1000>;
 			reg-names = "funnel-base";
 
@@ -3402,8 +3402,8 @@
 				port@0 {
 
 					endpoint {
-						phandle = <0x192>;
-						remote-endpoint = <0x195>;
+						phandle = <0x18e>;
+						remote-endpoint = <0x191>;
 					};
 				};
 
@@ -3411,8 +3411,8 @@
 					reg = <0x07>;
 
 					endpoint {
-						phandle = <0x1b8>;
-						remote-endpoint = <0x196>;
+						phandle = <0x1b4>;
+						remote-endpoint = <0x192>;
 						slave-mode;
 					};
 				};
@@ -3421,8 +3421,8 @@
 					reg = <0x06>;
 
 					endpoint {
-						phandle = <0x1be>;
-						remote-endpoint = <0x197>;
+						phandle = <0x1ba>;
+						remote-endpoint = <0x193>;
 						slave-mode;
 					};
 				};
@@ -3431,8 +3431,8 @@
 					reg = <0x03>;
 
 					endpoint {
-						phandle = <0x19b>;
-						remote-endpoint = <0x198>;
+						phandle = <0x197>;
+						remote-endpoint = <0x194>;
 						slave-mode;
 					};
 				};
@@ -3441,8 +3441,8 @@
 					reg = <0x04>;
 
 					endpoint {
-						phandle = <0x19e>;
-						remote-endpoint = <0x199>;
+						phandle = <0x19a>;
+						remote-endpoint = <0x195>;
 						slave-mode;
 					};
 				};
@@ -3451,8 +3451,8 @@
 					reg = <0x05>;
 
 					endpoint {
-						phandle = <0x1a1>;
-						remote-endpoint = <0x19a>;
+						phandle = <0x19d>;
+						remote-endpoint = <0x196>;
 						slave-mode;
 					};
 				};
@@ -3465,7 +3465,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-funnel-center";
-			phandle = <0x2c4>;
+			phandle = <0x2c3>;
 			reg = <0x6100000 0x1000>;
 			reg-names = "funnel-base";
 
@@ -3476,8 +3476,8 @@
 				port@0 {
 
 					endpoint {
-						phandle = <0x198>;
-						remote-endpoint = <0x19b>;
+						phandle = <0x194>;
+						remote-endpoint = <0x197>;
 					};
 				};
 
@@ -3485,8 +3485,8 @@
 					reg = <0x00>;
 
 					endpoint {
-						phandle = <0x1ba>;
-						remote-endpoint = <0x19c>;
+						phandle = <0x1b6>;
+						remote-endpoint = <0x198>;
 						slave-mode;
 					};
 				};
@@ -3495,8 +3495,8 @@
 					reg = <0x02>;
 
 					endpoint {
-						phandle = <0x1bd>;
-						remote-endpoint = <0x19d>;
+						phandle = <0x1b9>;
+						remote-endpoint = <0x199>;
 						slave-mode;
 					};
 				};
@@ -3509,7 +3509,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-funnel-right";
-			phandle = <0x2c5>;
+			phandle = <0x2c4>;
 			reg = <0x6120000 0x1000>;
 			reg-names = "funnel-base";
 
@@ -3520,8 +3520,8 @@
 				port@0 {
 
 					endpoint {
-						phandle = <0x199>;
-						remote-endpoint = <0x19e>;
+						phandle = <0x195>;
+						remote-endpoint = <0x19a>;
 					};
 				};
 
@@ -3529,8 +3529,8 @@
 					reg = <0x01>;
 
 					endpoint {
-						phandle = <0x1bc>;
-						remote-endpoint = <0x19f>;
+						phandle = <0x1b8>;
+						remote-endpoint = <0x19b>;
 						slave-mode;
 					};
 				};
@@ -3539,8 +3539,8 @@
 					reg = <0x02>;
 
 					endpoint {
-						phandle = <0x1a7>;
-						remote-endpoint = <0x1a0>;
+						phandle = <0x1a3>;
+						remote-endpoint = <0x19c>;
 						slave-mode;
 					};
 				};
@@ -3553,7 +3553,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-funnel-mm";
-			phandle = <0x2c6>;
+			phandle = <0x2c5>;
 			reg = <0x6130000 0x1000>;
 			reg-names = "funnel-base";
 
@@ -3564,8 +3564,8 @@
 				port@0 {
 
 					endpoint {
-						phandle = <0x19a>;
-						remote-endpoint = <0x1a1>;
+						phandle = <0x196>;
+						remote-endpoint = <0x19d>;
 					};
 				};
 
@@ -3573,8 +3573,8 @@
 					reg = <0x00>;
 
 					endpoint {
-						phandle = <0x1b9>;
-						remote-endpoint = <0x1a2>;
+						phandle = <0x1b5>;
+						remote-endpoint = <0x19e>;
 						slave-mode;
 					};
 				};
@@ -3583,8 +3583,8 @@
 					reg = <0x04>;
 
 					endpoint {
-						phandle = <0x1a6>;
-						remote-endpoint = <0x1a3>;
+						phandle = <0x1a2>;
+						remote-endpoint = <0x19f>;
 						slave-mode;
 					};
 				};
@@ -3593,8 +3593,8 @@
 					reg = <0x05>;
 
 					endpoint {
-						phandle = <0x1bb>;
-						remote-endpoint = <0x1a4>;
+						phandle = <0x1b7>;
+						remote-endpoint = <0x1a0>;
 						slave-mode;
 					};
 				};
@@ -3604,7 +3604,7 @@
 
 					endpoint {
 						phandle = <0x72>;
-						remote-endpoint = <0x1a5>;
+						remote-endpoint = <0x1a1>;
 						slave-mode;
 					};
 				};
@@ -3617,15 +3617,15 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-funnel-cam";
-			phandle = <0x2c7>;
+			phandle = <0x2c6>;
 			reg = <0x6132000 0x1000>;
 			reg-names = "funnel-base";
 
 			port {
 
 				endpoint {
-					phandle = <0x1a3>;
-					remote-endpoint = <0x1a6>;
+					phandle = <0x19f>;
+					remote-endpoint = <0x1a2>;
 				};
 			};
 		};
@@ -3636,7 +3636,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-funnel-apss";
-			phandle = <0x2c8>;
+			phandle = <0x2c7>;
 			reg = <0x61a1000 0x1000>;
 			reg-names = "funnel-base";
 
@@ -3647,8 +3647,8 @@
 				port@0 {
 
 					endpoint {
-						phandle = <0x1a0>;
-						remote-endpoint = <0x1a7>;
+						phandle = <0x19c>;
+						remote-endpoint = <0x1a3>;
 					};
 				};
 
@@ -3656,8 +3656,8 @@
 					reg = <0x00>;
 
 					endpoint {
-						phandle = <0x1b0>;
-						remote-endpoint = <0x1a8>;
+						phandle = <0x1ac>;
+						remote-endpoint = <0x1a4>;
 						slave-mode;
 					};
 				};
@@ -3666,8 +3666,8 @@
 					reg = <0x01>;
 
 					endpoint {
-						phandle = <0x1b1>;
-						remote-endpoint = <0x1a9>;
+						phandle = <0x1ad>;
+						remote-endpoint = <0x1a5>;
 						slave-mode;
 					};
 				};
@@ -3676,8 +3676,8 @@
 					reg = <0x02>;
 
 					endpoint {
-						phandle = <0x1b2>;
-						remote-endpoint = <0x1aa>;
+						phandle = <0x1ae>;
+						remote-endpoint = <0x1a6>;
 						slave-mode;
 					};
 				};
@@ -3686,8 +3686,8 @@
 					reg = <0x03>;
 
 					endpoint {
-						phandle = <0x1b3>;
-						remote-endpoint = <0x1ab>;
+						phandle = <0x1af>;
+						remote-endpoint = <0x1a7>;
 						slave-mode;
 					};
 				};
@@ -3696,8 +3696,8 @@
 					reg = <0x04>;
 
 					endpoint {
-						phandle = <0x1b4>;
-						remote-endpoint = <0x1ac>;
+						phandle = <0x1b0>;
+						remote-endpoint = <0x1a8>;
 						slave-mode;
 					};
 				};
@@ -3706,8 +3706,8 @@
 					reg = <0x05>;
 
 					endpoint {
-						phandle = <0x1b5>;
-						remote-endpoint = <0x1ad>;
+						phandle = <0x1b1>;
+						remote-endpoint = <0x1a9>;
 						slave-mode;
 					};
 				};
@@ -3716,8 +3716,8 @@
 					reg = <0x06>;
 
 					endpoint {
-						phandle = <0x1b6>;
-						remote-endpoint = <0x1ae>;
+						phandle = <0x1b2>;
+						remote-endpoint = <0x1aa>;
 						slave-mode;
 					};
 				};
@@ -3726,8 +3726,8 @@
 					reg = <0x07>;
 
 					endpoint {
-						phandle = <0x1b7>;
-						remote-endpoint = <0x1af>;
+						phandle = <0x1b3>;
+						remote-endpoint = <0x1ab>;
 						slave-mode;
 					};
 				};
@@ -3775,9 +3775,9 @@
 			clock-names = "apb_pclk";
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "qcom,coresight-hwevent";
-			coresight-csr = <0x18d>;
+			coresight-csr = <0x189>;
 			coresight-name = "coresight-hwevent";
-			phandle = <0x2f0>;
+			phandle = <0x2ef>;
 			reg = <0x6101000 0x148 0x6101fb0 0x04 0x6121000 0x148 0x6121fb0 0x04 0x6131000 0x148 0x6131fb0 0x04 0x78c5010 0x04 0x7885010 0x04>;
 			reg-names = "center-wrapper-mux\0center-wrapper-lockaccess\0right-wrapper-mux\0right-wrapper-lockaccess\0mm-wrapper-mux\0mm-wrapper-lockaccess\0usbbam-mux\0blsp-mux";
 		};
@@ -4056,7 +4056,7 @@
 			clock-names = "core_clk";
 			clocks = <0x25 0x1492202a>;
 			compatible = "qcom,jtagv8-mm";
-			phandle = <0x27c>;
+			phandle = <0x27b>;
 			qcom,coresight-jtagmm-cpu = <0x02>;
 			reg = <0x619c000 0x1000>;
 			reg-names = "etm-base";
@@ -4066,7 +4066,7 @@
 			clock-names = "core_clk";
 			clocks = <0x25 0x1492202a>;
 			compatible = "qcom,jtagv8-mm";
-			phandle = <0x27d>;
+			phandle = <0x27c>;
 			qcom,coresight-jtagmm-cpu = <0x03>;
 			reg = <0x619d000 0x1000>;
 			reg-names = "etm-base";
@@ -4076,7 +4076,7 @@
 			clock-names = "core_clk";
 			clocks = <0x25 0x1492202a>;
 			compatible = "qcom,jtagv8-mm";
-			phandle = <0x27e>;
+			phandle = <0x27d>;
 			qcom,coresight-jtagmm-cpu = <0x04>;
 			reg = <0x619e000 0x1000>;
 			reg-names = "etm-base";
@@ -4086,7 +4086,7 @@
 			clock-names = "core_clk";
 			clocks = <0x25 0x1492202a>;
 			compatible = "qcom,jtagv8-mm";
-			phandle = <0x27f>;
+			phandle = <0x27e>;
 			qcom,coresight-jtagmm-cpu = <0x05>;
 			reg = <0x619f000 0x1000>;
 			reg-names = "etm-base";
@@ -4096,7 +4096,7 @@
 			clock-names = "core_clk";
 			clocks = <0x25 0x1492202a>;
 			compatible = "qcom,jtagv8-mm";
-			phandle = <0x278>;
+			phandle = <0x277>;
 			qcom,coresight-jtagmm-cpu = <0x06>;
 			reg = <0x61bc000 0x1000>;
 			reg-names = "etm-base";
@@ -4106,7 +4106,7 @@
 			clock-names = "core_clk";
 			clocks = <0x25 0x1492202a>;
 			compatible = "qcom,jtagv8-mm";
-			phandle = <0x279>;
+			phandle = <0x278>;
 			qcom,coresight-jtagmm-cpu = <0x07>;
 			reg = <0x61bd000 0x1000>;
 			reg-names = "etm-base";
@@ -4116,7 +4116,7 @@
 			clock-names = "core_clk";
 			clocks = <0x25 0x1492202a>;
 			compatible = "qcom,jtagv8-mm";
-			phandle = <0x27a>;
+			phandle = <0x279>;
 			qcom,coresight-jtagmm-cpu = <0x08>;
 			reg = <0x61be000 0x1000>;
 			reg-names = "etm-base";
@@ -4126,7 +4126,7 @@
 			clock-names = "core_clk";
 			clocks = <0x25 0x1492202a>;
 			compatible = "qcom,jtagv8-mm";
-			phandle = <0x27b>;
+			phandle = <0x27a>;
 			qcom,coresight-jtagmm-cpu = <0x09>;
 			reg = <0x61bf000 0x1000>;
 			reg-names = "etm-base";
@@ -4186,8 +4186,8 @@
 			port {
 
 				endpoint {
-					phandle = <0x19f>;
-					remote-endpoint = <0x1bc>;
+					phandle = <0x19b>;
+					remote-endpoint = <0x1b8>;
 				};
 			};
 		};
@@ -4195,33 +4195,33 @@
 		msm_cdc_pinctrl {
 			compatible = "qcom,msm-cdc-pinctrl";
 			phandle = <0xba>;
-			pinctrl-0 = <0x173>;
-			pinctrl-1 = <0x174>;
+			pinctrl-0 = <0x16f>;
+			pinctrl-1 = <0x170>;
 			pinctrl-names = "aud_active\0aud_sleep";
 			status = "disabled";
 		};
 
 		msm_cdc_pinctrl_pri {
 			compatible = "qcom,msm-cdc-pinctrl";
-			phandle = <0x129>;
-			pinctrl-0 = <0x156 0x157>;
-			pinctrl-1 = <0x158 0x159>;
+			phandle = <0x125>;
+			pinctrl-0 = <0x152 0x153>;
+			pinctrl-1 = <0x154 0x155>;
 			pinctrl-names = "aud_active\0aud_sleep";
 		};
 
 		msm_cdc_pinctrl_quin {
 			compatible = "qcom,msm-cdc-pinctrl";
-			phandle = <0x165>;
-			pinctrl-0 = <0x15a 0x15b>;
-			pinctrl-1 = <0x15c 0x15d>;
+			phandle = <0x161>;
+			pinctrl-0 = <0x156 0x157>;
+			pinctrl-1 = <0x158 0x159>;
 			pinctrl-names = "aud_active\0aud_sleep";
 		};
 
 		msm_cdc_pinctrl_us_euro_sw {
 			compatible = "qcom,msm-cdc-pinctrl";
-			phandle = <0x164>;
-			pinctrl-0 = <0x154>;
-			pinctrl-1 = <0x155>;
+			phandle = <0x160>;
+			pinctrl-0 = <0x150>;
+			pinctrl-1 = <0x151>;
 			pinctrl-names = "aud_active\0aud_sleep";
 		};
 
@@ -4238,7 +4238,7 @@
 			reg-names = "pinctrl_regs";
 
 			blsp2_uart1_active {
-				phandle = <0xf0>;
+				phandle = <0xeb>;
 
 				config {
 					bias-disable;
@@ -4253,7 +4253,7 @@
 			};
 
 			blsp2_uart1_sleep {
-				phandle = <0xef>;
+				phandle = <0xea>;
 
 				config {
 					bias-disable;
@@ -4298,7 +4298,7 @@
 			};
 
 			cam_sensor_front1_default {
-				phandle = <0x186>;
+				phandle = <0x182>;
 
 				config {
 					bias-disable;
@@ -4313,7 +4313,7 @@
 			};
 
 			cam_sensor_front1_sleep {
-				phandle = <0x188>;
+				phandle = <0x184>;
 
 				config {
 					bias-disable;
@@ -4328,7 +4328,7 @@
 			};
 
 			cam_sensor_front_default {
-				phandle = <0x18a>;
+				phandle = <0x186>;
 
 				config {
 					bias-disable;
@@ -4343,7 +4343,7 @@
 			};
 
 			cam_sensor_front_sleep {
-				phandle = <0x18c>;
+				phandle = <0x188>;
 
 				config {
 					bias-disable;
@@ -4358,7 +4358,7 @@
 			};
 
 			cam_sensor_mclk0_default {
-				phandle = <0x17e>;
+				phandle = <0x17a>;
 
 				config {
 					bias-disable;
@@ -4373,7 +4373,7 @@
 			};
 
 			cam_sensor_mclk0_sleep {
-				phandle = <0x181>;
+				phandle = <0x17d>;
 
 				config {
 					bias-pull-down;
@@ -4388,7 +4388,7 @@
 			};
 
 			cam_sensor_mclk1_default {
-				phandle = <0x185>;
+				phandle = <0x181>;
 
 				config {
 					bias-disable;
@@ -4403,7 +4403,7 @@
 			};
 
 			cam_sensor_mclk1_sleep {
-				phandle = <0x187>;
+				phandle = <0x183>;
 
 				config {
 					bias-pull-down;
@@ -4418,7 +4418,7 @@
 			};
 
 			cam_sensor_mclk2_default {
-				phandle = <0x189>;
+				phandle = <0x185>;
 
 				config {
 					bias-disable;
@@ -4433,7 +4433,7 @@
 			};
 
 			cam_sensor_mclk2_sleep {
-				phandle = <0x18b>;
+				phandle = <0x187>;
 
 				config {
 					bias-pull-down;
@@ -4448,7 +4448,7 @@
 			};
 
 			cam_sensor_rear_reset {
-				phandle = <0x17f>;
+				phandle = <0x17b>;
 
 				config {
 					bias-disable;
@@ -4463,7 +4463,7 @@
 			};
 
 			cam_sensor_rear_reset_sleep {
-				phandle = <0x182>;
+				phandle = <0x17e>;
 
 				config {
 					bias-disable;
@@ -4508,7 +4508,7 @@
 			};
 
 			cam_sensor_rear_vana {
-				phandle = <0x180>;
+				phandle = <0x17c>;
 
 				config {
 					bias-disable;
@@ -4523,7 +4523,7 @@
 			};
 
 			cam_sensor_rear_vana_sleep {
-				phandle = <0x183>;
+				phandle = <0x17f>;
 
 				config {
 					bias-disable;
@@ -4570,7 +4570,7 @@
 			cci {
 
 				cci0_active {
-					phandle = <0x179>;
+					phandle = <0x175>;
 
 					config {
 						bias-disable;
@@ -4585,7 +4585,7 @@
 				};
 
 				cci0_suspend {
-					phandle = <0x17b>;
+					phandle = <0x177>;
 
 					config {
 						bias-disable;
@@ -4600,7 +4600,7 @@
 				};
 
 				cci1_active {
-					phandle = <0x17a>;
+					phandle = <0x176>;
 
 					config {
 						bias-disable;
@@ -4615,7 +4615,7 @@
 				};
 
 				cci1_suspend {
-					phandle = <0x17c>;
+					phandle = <0x178>;
 
 					config {
 						bias-disable;
@@ -4633,7 +4633,7 @@
 			cdc-pdm-2-lines {
 
 				pdm_lines_2_off {
-					phandle = <0x159>;
+					phandle = <0x155>;
 
 					config {
 						bias-disable;
@@ -4648,7 +4648,7 @@
 				};
 
 				pdm_lines_2_on {
-					phandle = <0x157>;
+					phandle = <0x153>;
 
 					config {
 						drive-strength = <0x08>;
@@ -4665,7 +4665,7 @@
 			cdc-pdm-lines {
 
 				pdm_lines_off {
-					phandle = <0x158>;
+					phandle = <0x154>;
 
 					config {
 						bias-disable;
@@ -4680,7 +4680,7 @@
 				};
 
 				pdm_lines_on {
-					phandle = <0x156>;
+					phandle = <0x152>;
 
 					config {
 						drive-strength = <0x08>;
@@ -4730,7 +4730,7 @@
 			cdc_reset_ctrl {
 
 				cdc_reset_active {
-					phandle = <0x173>;
+					phandle = <0x16f>;
 
 					config {
 						bias-pull-down;
@@ -4746,7 +4746,7 @@
 				};
 
 				cdc_reset_sleep {
-					phandle = <0x174>;
+					phandle = <0x170>;
 
 					config {
 						bias-disable;
@@ -4765,7 +4765,7 @@
 			cross-conn-det {
 
 				lines_off {
-					phandle = <0x155>;
+					phandle = <0x151>;
 
 					config {
 						bias-pull-down;
@@ -4780,7 +4780,7 @@
 				};
 
 				lines_on {
-					phandle = <0x154>;
+					phandle = <0x150>;
 
 					config {
 						bias-pull-down;
@@ -5581,7 +5581,7 @@
 			pmx_sdc1_clk {
 
 				sdc1_clk_off {
-					phandle = <0x107>;
+					phandle = <0x103>;
 
 					config {
 						bias-disable;
@@ -5591,7 +5591,7 @@
 				};
 
 				sdc1_clk_on {
-					phandle = <0x103>;
+					phandle = <0xff>;
 
 					config {
 						bias-disable;
@@ -5604,7 +5604,7 @@
 			pmx_sdc1_cmd {
 
 				sdc1_cmd_off {
-					phandle = <0x108>;
+					phandle = <0x104>;
 
 					config {
 						bias-pull-up;
@@ -5614,7 +5614,7 @@
 				};
 
 				sdc1_cmd_on {
-					phandle = <0x104>;
+					phandle = <0x100>;
 
 					config {
 						bias-pull-up;
@@ -5627,7 +5627,7 @@
 			pmx_sdc1_data {
 
 				sdc1_data_off {
-					phandle = <0x109>;
+					phandle = <0x105>;
 
 					config {
 						bias-pull-up;
@@ -5637,7 +5637,7 @@
 				};
 
 				sdc1_data_on {
-					phandle = <0x105>;
+					phandle = <0x101>;
 
 					config {
 						bias-pull-up;
@@ -5650,7 +5650,7 @@
 			pmx_sdc1_rclk {
 
 				sdc1_rclk_off {
-					phandle = <0x10a>;
+					phandle = <0x106>;
 
 					config {
 						bias-pull-down;
@@ -5659,7 +5659,7 @@
 				};
 
 				sdc1_rclk_on {
-					phandle = <0x106>;
+					phandle = <0x102>;
 
 					config {
 						bias-pull-down;
@@ -5671,7 +5671,7 @@
 			pmx_sdc2_clk {
 
 				sdc2_clk_off {
-					phandle = <0x111>;
+					phandle = <0x10d>;
 
 					config {
 						bias-disable;
@@ -5681,7 +5681,7 @@
 				};
 
 				sdc2_clk_on {
-					phandle = <0x10d>;
+					phandle = <0x109>;
 
 					config {
 						bias-disable;
@@ -5694,7 +5694,7 @@
 			pmx_sdc2_cmd {
 
 				sdc2_cmd_off {
-					phandle = <0x112>;
+					phandle = <0x10e>;
 
 					config {
 						bias-pull-up;
@@ -5704,7 +5704,7 @@
 				};
 
 				sdc2_cmd_on {
-					phandle = <0x10e>;
+					phandle = <0x10a>;
 
 					config {
 						bias-pull-up;
@@ -5717,7 +5717,7 @@
 			pmx_sdc2_data {
 
 				sdc2_data_off {
-					phandle = <0x113>;
+					phandle = <0x10f>;
 
 					config {
 						bias-pull-up;
@@ -5727,7 +5727,7 @@
 				};
 
 				sdc2_data_on {
-					phandle = <0x10f>;
+					phandle = <0x10b>;
 
 					config {
 						bias-pull-up;
@@ -5887,7 +5887,7 @@
 			pri-tlmm-lines {
 
 				pri_tlmm_lines_act {
-					phandle = <0x15a>;
+					phandle = <0x156>;
 
 					config {
 						drive-strength = <0x08>;
@@ -5901,7 +5901,7 @@
 				};
 
 				pri_tlmm_lines_sus {
-					phandle = <0x15c>;
+					phandle = <0x158>;
 
 					config {
 						bias-pull-down;
@@ -5919,7 +5919,7 @@
 			pri-tlmm-ws-lines {
 
 				pri_tlmm_ws_act {
-					phandle = <0x15b>;
+					phandle = <0x157>;
 
 					config {
 						drive-strength = <0x08>;
@@ -5933,7 +5933,7 @@
 				};
 
 				pri_tlmm_ws_sus {
-					phandle = <0x15d>;
+					phandle = <0x159>;
 
 					config {
 						bias-pull-down;
@@ -5966,7 +5966,7 @@
 				};
 
 				cd_on {
-					phandle = <0x110>;
+					phandle = <0x10c>;
 
 					config {
 						bias-pull-up;
@@ -6063,7 +6063,7 @@
 			spi6 {
 
 				cs0_active {
-					phandle = <0xe7>;
+					phandle = <0x1be>;
 
 					config {
 						bias-disable = <0x00>;
@@ -6078,7 +6078,7 @@
 				};
 
 				cs0_sleep {
-					phandle = <0xe9>;
+					phandle = <0x1c0>;
 
 					config {
 						bias-disable = <0x00>;
@@ -6093,7 +6093,7 @@
 				};
 
 				spi6_default {
-					phandle = <0xe6>;
+					phandle = <0x1bd>;
 
 					config {
 						bias-disable = <0x00>;
@@ -6108,7 +6108,7 @@
 				};
 
 				spi6_sleep {
-					phandle = <0xe8>;
+					phandle = <0x1bf>;
 
 					config {
 						bias-pull-down;
@@ -6349,7 +6349,7 @@
 			wcd9xxx_intr {
 
 				wcd_intr_default {
-					phandle = <0x171>;
+					phandle = <0x16d>;
 
 					config {
 						bias-pull-down;
@@ -6368,7 +6368,7 @@
 			wcnss_pmux_5wire {
 
 				wcnss_default {
-					phandle = <0x123>;
+					phandle = <0x11f>;
 
 					config {
 						bias-pull-up;
@@ -6398,7 +6398,7 @@
 				};
 
 				wcnss_sleep {
-					phandle = <0x124>;
+					phandle = <0x120>;
 
 					config {
 						bias-pull-down;
@@ -6432,7 +6432,7 @@
 				phandle = <0x1d6>;
 
 				wcnss_gpio_default {
-					phandle = <0x125>;
+					phandle = <0x121>;
 
 					config {
 						bias-pull-up;
@@ -6450,7 +6450,7 @@
 			wsa-vi {
 
 				wsa_vi_off {
-					phandle = <0x15f>;
+					phandle = <0x15b>;
 
 					config {
 						bias-pull-down;
@@ -6465,7 +6465,7 @@
 				};
 
 				wsa_vi_on {
-					phandle = <0x15e>;
+					phandle = <0x15a>;
 
 					config {
 						bias-disable;
@@ -6483,7 +6483,7 @@
 			wsa_clk {
 
 				wsa_clk_off {
-					phandle = <0x161>;
+					phandle = <0x15d>;
 
 					config {
 						bias-pull-down;
@@ -6499,7 +6499,7 @@
 				};
 
 				wsa_clk_on {
-					phandle = <0x160>;
+					phandle = <0x15c>;
 
 					config {
 						drive-strength = <0x08>;
@@ -6517,7 +6517,7 @@
 			wsa_reset {
 
 				wsa_reset_off {
-					phandle = <0x163>;
+					phandle = <0x15f>;
 
 					config {
 						drive-strength = <0x02>;
@@ -6532,7 +6532,7 @@
 				};
 
 				wsa_reset_on {
-					phandle = <0x162>;
+					phandle = <0x15e>;
 
 					config {
 						drive-strength = <0x02>;
@@ -6553,7 +6553,7 @@
 			clocks = <0x25 0x37a21414 0x25 0xd390d2 0x25 0x94de4919 0x25 0xd4415c9b>;
 			compatible = "qcom,qcedev";
 			interrupts = <0x00 0xcf 0x00>;
-			phandle = <0x291>;
+			phandle = <0x290>;
 			qcom,bam-pipe-pair = <0x01>;
 			qcom,ce-device = <0x00>;
 			qcom,ce-hw-instance = <0x00>;
@@ -6569,7 +6569,7 @@
 
 		qcom,adsprpc-mem {
 			compatible = "qcom,msm-adsprpc-mem-region";
-			memory-region = <0x101>;
+			memory-region = <0xfc>;
 		};
 
 		qcom,avtimer@c0a300c {
@@ -6582,7 +6582,7 @@
 		qcom,bam_dmux@4044000 {
 			compatible = "qcom,bam_dmux";
 			interrupts = <0x00 0xa2 0x01>;
-			phandle = <0x293>;
+			phandle = <0x292>;
 			qcom,fast-shutdown;
 			qcom,max-rx-mtu = <0x1000>;
 			qcom,no-cpu-affinity;
@@ -6598,14 +6598,14 @@
 				compatible = "qcom,msm-cam-smmu-cb";
 				iommus = <0x6f 0x400 0x00 0x6f 0x2400 0x00>;
 				label = "vfe";
-				phandle = <0x2b5>;
+				phandle = <0x2b4>;
 				qcom,scratch-buf-support;
 			};
 
 			msm_cam_smmu_cb2 {
 				compatible = "qcom,msm-cam-smmu-cb";
 				label = "vfe_secure";
-				phandle = <0x2b6>;
+				phandle = <0x2b5>;
 				qcom,secure-context;
 			};
 
@@ -6613,14 +6613,14 @@
 				compatible = "qcom,msm-cam-smmu-cb";
 				iommus = <0x6f 0x1c00 0x00>;
 				label = "cpp";
-				phandle = <0x2b7>;
+				phandle = <0x2b6>;
 			};
 
 			msm_cam_smmu_cb4 {
 				compatible = "qcom,msm-cam-smmu-cb";
 				iommus = <0x6f 0x1800 0x00>;
 				label = "jpeg_enc0";
-				phandle = <0x2b8>;
+				phandle = <0x2b7>;
 			};
 		};
 
@@ -6637,7 +6637,7 @@
 		qcom,cc-debug@1874000 {
 			#clock-cells = <0x01>;
 			compatible = "qcom,cc-debug-8937";
-			phandle = <0x126>;
+			phandle = <0x122>;
 			reg = <0x1874000 0x04 0xb11101c 0x08>;
 			reg-names = "cc_base\0meas";
 		};
@@ -6648,7 +6648,7 @@
 			compatible = "devfreq-simple-dev";
 			freq-tbl-khz = <0x61a80 0x61a80 0x61a80 0x82208 0x8ca00>;
 			governor = "cpufreq";
-			phandle = <0xec>;
+			phandle = <0xe7>;
 		};
 
 		qcom,cci@1b0c000 {
@@ -6661,9 +6661,9 @@
 			gpios = <0x86 0x1d 0x00 0x86 0x1e 0x00 0x86 0x1f 0x00 0x86 0x20 0x00>;
 			interrupt-names = "cci";
 			interrupts = <0x00 0x32 0x00>;
-			phandle = <0x2b9>;
-			pinctrl-0 = <0x179 0x17a>;
-			pinctrl-1 = <0x17b 0x17c>;
+			phandle = <0x2b8>;
+			pinctrl-0 = <0x175 0x176>;
+			pinctrl-1 = <0x177 0x178>;
 			pinctrl-names = "cci_default\0cci_suspend";
 			qcom,clock-rates = <0x3ab06a0 0x124f800 0x00 0x00 0x00 0x00 0x3ab06a0 0x23c3460 0x00 0x00 0x00 0x00>;
 			qcom,gpio-tbl-flags = <0x01 0x01 0x01 0x01>;
@@ -6675,15 +6675,15 @@
 
 			qcom,camera@0 {
 				cam_vaf-supply = <0x7e>;
-				cam_vdig-supply = <0x17d>;
+				cam_vdig-supply = <0x179>;
 				cam_vio-supply = <0x7f>;
 				cell-index = <0x00>;
 				clock-names = "cam_src_clk\0cam_clk";
 				clocks = <0x25 0x266b3853 0x25 0x80902deb>;
 				compatible = "qcom,camera";
 				gpios = <0x86 0x1a 0x00 0x86 0x24 0x00 0x86 0x23 0x00>;
-				pinctrl-0 = <0x17e 0x17f 0x180>;
-				pinctrl-1 = <0x181 0x182 0x183>;
+				pinctrl-0 = <0x17a 0x17b 0x17c>;
+				pinctrl-1 = <0x17d 0x17e 0x17f>;
 				pinctrl-names = "cam_default\0cam_suspend";
 				qcom,cam-vreg-max-voltage = <0x00 0x124f80 0x2b7cd0>;
 				qcom,cam-vreg-min-voltage = <0x00 0x124f80 0x2b7cd0>;
@@ -6706,15 +6706,15 @@
 			};
 
 			qcom,camera@1 {
-				cam_vana-supply = <0x184>;
+				cam_vana-supply = <0x180>;
 				cam_vio-supply = <0x7f>;
 				cell-index = <0x01>;
 				clock-names = "cam_src_clk\0cam_clk";
 				clocks = <0x25 0xa73cad0c 0x25 0x5002d85f>;
 				compatible = "qcom,camera";
 				gpios = <0x86 0x1b 0x00 0x86 0x28 0x00>;
-				pinctrl-0 = <0x185 0x186>;
-				pinctrl-1 = <0x187 0x188>;
+				pinctrl-0 = <0x181 0x182>;
+				pinctrl-1 = <0x183 0x184>;
 				pinctrl-names = "cam_default\0cam_suspend";
 				qcom,cam-vreg-max-voltage = <0x2ab980 0x00>;
 				qcom,cam-vreg-min-voltage = <0x2ab980 0x00>;
@@ -6737,16 +6737,16 @@
 			};
 
 			qcom,camera@2 {
-				cam_vana-supply = <0x184>;
-				cam_vdig-supply = <0x17d>;
+				cam_vana-supply = <0x180>;
+				cam_vdig-supply = <0x179>;
 				cam_vio-supply = <0x7f>;
 				cell-index = <0x02>;
 				clock-names = "cam_src_clk\0cam_clk";
 				clocks = <0x25 0x42545468 0x25 0x222f8fff>;
 				compatible = "qcom,camera";
 				gpios = <0x86 0x1c 0x00 0x86 0x26 0x00>;
-				pinctrl-0 = <0x189 0x18a 0x180>;
-				pinctrl-1 = <0x18b 0x18c 0x183>;
+				pinctrl-0 = <0x185 0x186 0x17c>;
+				pinctrl-1 = <0x187 0x188 0x17f>;
 				pinctrl-names = "cam_default\0cam_suspend";
 				qcom,cam-vreg-max-voltage = <0x124f80 0x00 0x2ab980>;
 				qcom,cam-vreg-min-voltage = <0x124f80 0x00 0x2ab980>;
@@ -6769,7 +6769,7 @@
 			};
 
 			qcom,i2c_custom_mode {
-				phandle = <0x2bc>;
+				phandle = <0x2bb>;
 				qcom,hw-scl-stretch-en = <0x01>;
 				qcom,hw-tbuf = <0x19>;
 				qcom,hw-thd-dat = <0x0d>;
@@ -6784,7 +6784,7 @@
 			};
 
 			qcom,i2c_fast_mode {
-				phandle = <0x2bb>;
+				phandle = <0x2ba>;
 				qcom,hw-scl-stretch-en = <0x00>;
 				qcom,hw-tbuf = <0x20>;
 				qcom,hw-thd-dat = <0x0d>;
@@ -6799,7 +6799,7 @@
 			};
 
 			qcom,i2c_fast_plus_mode {
-				phandle = <0x2bd>;
+				phandle = <0x2bc>;
 				qcom,cci-clk-src = <0x23c3460>;
 				qcom,hw-scl-stretch-en = <0x01>;
 				qcom,hw-tbuf = <0x13>;
@@ -6815,7 +6815,7 @@
 			};
 
 			qcom,i2c_standard_mode {
-				phandle = <0x2ba>;
+				phandle = <0x2b9>;
 				qcom,hw-scl-stretch-en = <0x00>;
 				qcom,hw-tbuf = <0x76>;
 				qcom,hw-thd-dat = <0x0a>;
@@ -6858,7 +6858,7 @@
 			reset-names = "micro_iface_reset";
 			resets = <0x25 0x00>;
 			status = "ok";
-			vdd-supply = <0x178>;
+			vdd-supply = <0x174>;
 
 			qcom,cpp-fw-payload-info {
 				qcom,fe-ptr-off = <0x05>;
@@ -6874,7 +6874,7 @@
 			compatible = "qcom,bimc-bwmon2";
 			interrupts = <0x00 0xb7 0x04>;
 			qcom,mport = <0x00>;
-			qcom,target-dev = <0xeb>;
+			qcom,target-dev = <0xe6>;
 			reg = <0x408000 0x300 0x401000 0x200>;
 			reg-names = "base\0global_base";
 		};
@@ -6910,7 +6910,7 @@
 		qcom,cpubw {
 			compatible = "qcom,devbw";
 			governor = "cpufreq";
-			phandle = <0xeb>;
+			phandle = <0xe6>;
 			qcom,active-only;
 			qcom,bw-tbl = <0x301 0x64b 0x84c 0xb71 0xc95 0x1098 0x13bd 0x1650 0x17bf 0x192d 0x1bc0>;
 			qcom,src-dst-ports = <0x01 0x200>;
@@ -7021,7 +7021,7 @@
 
 		qcom,gdsc@183f078 {
 			compatible = "qcom,gdsc";
-			phandle = <0x2bf>;
+			phandle = <0x2be>;
 			reg = <0x183f078 0x04>;
 			regulator-name = "gdsc_usb30";
 			status = "disabled";
@@ -7050,7 +7050,7 @@
 
 		qcom,gdsc@184c030 {
 			compatible = "qcom,gdsc";
-			phandle = <0x2be>;
+			phandle = <0x2bd>;
 			reg = <0x184c030 0x04>;
 			regulator-name = "gdsc_venus_core1";
 			status = "disabled";
@@ -7071,7 +7071,7 @@
 			clock-names = "core_clk\0bus_clk";
 			clocks = <0x25 0x1ed3f032 0x25 0x3e278896>;
 			compatible = "qcom,gdsc";
-			phandle = <0x177>;
+			phandle = <0x173>;
 			reg = <0x185701c 0x04>;
 			regulator-name = "gdsc_jpeg";
 			status = "okay";
@@ -7081,7 +7081,7 @@
 			clock-names = "core_clk\0bus_clk\0micro_clk\0csi_clk";
 			clocks = <0x25 0xaaa3cd97 0x25 0x77fe2384 0x25 0xfbbee8cf 0x25 0xcc73453c>;
 			compatible = "qcom,gdsc";
-			phandle = <0x175>;
+			phandle = <0x171>;
 			reg = <0x1858034 0x04>;
 			regulator-name = "gdsc_vfe";
 			status = "okay";
@@ -7091,7 +7091,7 @@
 			clock-names = "core_clk\0bus_clk\0micro_clk\0csi_clk";
 			clocks = <0x25 0xcaf20d99 0x25 0xaf7463b3 0x25 0xfbbee8cf 0x25 0xb1ef6e8b>;
 			compatible = "qcom,gdsc";
-			phandle = <0x176>;
+			phandle = <0x172>;
 			reg = <0x185806c 0x04>;
 			regulator-name = "gdsc_vfe1";
 			status = "okay";
@@ -7101,7 +7101,7 @@
 			clock-names = "core_clk\0bus_clk";
 			clocks = <0x25 0x7118a0de 0x25 0xbbf73861>;
 			compatible = "qcom,gdsc";
-			phandle = <0x178>;
+			phandle = <0x174>;
 			reg = <0x1858078 0x04>;
 			regulator-name = "gdsc_cpp";
 			status = "okay";
@@ -7253,8 +7253,8 @@
 			qcom,vdd-names = "vfe0-vdd\0vfe1-vdd";
 			reg = <0x1b31000 0x500 0x1b00020 0x10>;
 			reg-names = "ispif\0csi_clk_mux";
-			vfe0-vdd-supply = <0x175>;
-			vfe1-vdd-supply = <0x176>;
+			vfe0-vdd-supply = <0x171>;
+			vfe1-vdd-supply = <0x172>;
 		};
 
 		qcom,jpeg@1b1c000 {
@@ -7275,7 +7275,7 @@
 			reg = <0x1b1c000 0x400 0x1b60000 0xc30>;
 			reg-names = "jpeg_hw\0jpeg_vbif";
 			status = "ok";
-			vdd-supply = <0x177>;
+			vdd-supply = <0x173>;
 		};
 
 		qcom,kgsl-3d0@1c00000 {
@@ -7330,7 +7330,7 @@
 					port {
 
 						endpoint {
-							phandle = <0x1a5>;
+							phandle = <0x1a1>;
 							remote-endpoint = <0x72>;
 						};
 					};
@@ -7538,7 +7538,7 @@
 			memory-region = <0x1c9>;
 			phandle = <0x2f6>;
 			qcom,firmware-name = "a506_zap";
-			qcom,mas-crypto = <0x119>;
+			qcom,mas-crypto = <0x115>;
 			qcom,pas-id = <0x0d>;
 			qcom,proxy-clock-names = "scm_core_clk\0scm_iface_clk\0scm_bus_clk\0scm_core_clk_src";
 			qcom,scm_core_clk_src-freq = <0x4c4b400>;
@@ -7576,14 +7576,14 @@
 			clocks = <0x25 0xb72aa4c9 0x25 0xd390d2 0x25 0x94de4919 0x25 0xd4415c9b 0x25 0x37a21414>;
 			compatible = "qcom,pil-tz-generic";
 			interrupts = <0x00 0x125 0x01>;
-			memory-region = <0x11c>;
+			memory-region = <0x118>;
 			qcom,firmware-name = "adsp";
-			qcom,gpio-err-fatal = <0x11a 0x00 0x00>;
-			qcom,gpio-err-ready = <0x11a 0x01 0x00>;
-			qcom,gpio-force-stop = <0x11b 0x00 0x00>;
-			qcom,gpio-proxy-unvote = <0x11a 0x02 0x00>;
-			qcom,gpio-stop-ack = <0x11a 0x03 0x00>;
-			qcom,mas-crypto = <0x119>;
+			qcom,gpio-err-fatal = <0x116 0x00 0x00>;
+			qcom,gpio-err-ready = <0x116 0x01 0x00>;
+			qcom,gpio-force-stop = <0x117 0x00 0x00>;
+			qcom,gpio-proxy-unvote = <0x116 0x02 0x00>;
+			qcom,gpio-stop-ack = <0x116 0x03 0x00>;
+			qcom,mas-crypto = <0x115>;
 			qcom,pas-id = <0x01>;
 			qcom,proxy-clock-names = "xo\0scm_core_clk\0scm_iface_clk\0scm_bus_clk\0scm_core_clk_src";
 			qcom,proxy-reg-names = "vdd_cx";
@@ -9609,7 +9609,7 @@
 		qcom,mincpubw {
 			compatible = "qcom,devbw";
 			governor = "cpufreq";
-			phandle = <0xed>;
+			phandle = <0xe8>;
 			qcom,active-only;
 			qcom,bw-tbl = <0x301 0x64b 0x84c 0xb71 0xc95 0x1098 0x13bd 0x1650 0x17bf 0x192d 0x1bc0>;
 			qcom,src-dst-ports = <0x01 0x200>;
@@ -9629,7 +9629,7 @@
 
 		qcom,msm-audio-apr {
 			compatible = "qcom,msm-audio-apr";
-			phandle = <0x2a0>;
+			phandle = <0x29f>;
 			qcom,subsys-name = "apr_adsp";
 
 			msm_audio_apr_dummy {
@@ -9640,7 +9640,7 @@
 		qcom,msm-audio-ion {
 			compatible = "qcom,msm-audio-ion";
 			iommus = <0x6f 0x2001 0x00>;
-			phandle = <0x2a5>;
+			phandle = <0x2a4>;
 			qcom,smmu-enabled;
 			qcom,smmu-sid-mask = <0x00 0x0f>;
 			qcom,smmu-version = <0x02>;
@@ -9657,24 +9657,24 @@
 
 		qcom,msm-compr-dsp {
 			compatible = "qcom,msm-compr-dsp";
-			phandle = <0x295>;
+			phandle = <0x294>;
 		};
 
 		qcom,msm-compress-dsp {
 			compatible = "qcom,msm-compress-dsp";
-			phandle = <0x130>;
+			phandle = <0x12c>;
 		};
 
 		qcom,msm-cpe-lsm {
 			compatible = "qcom,msm-cpe-lsm";
-			phandle = <0x166>;
+			phandle = <0x162>;
 		};
 
 		qcom,msm-cpufreq {
 			clock-names = "l2_clk\0cpu0_clk\0cpu4_clk";
 			clocks = <0x6c 0x96854074 0x6c 0xcf28e63a 0x6c 0xc69f0878>;
 			compatible = "qcom,msm-cpufreq";
-			phandle = <0x25a>;
+			phandle = <0x259>;
 			qcom,cpufreq-table-0 = <0xea600 0x13ec00 0x16da00 0x1a1300 0x1b8a00 0x1de200 0x1ec300>;
 			qcom,cpufreq-table-4 = <0xbb800 0xf3c00 0x11df00 0x13ec00 0x164400>;
 			qcom,governor-per-policy;
@@ -9686,11 +9686,11 @@
 
 		qcom,msm-dai-mi2s {
 			compatible = "qcom,msm-dai-mi2s";
-			phandle = <0x298>;
+			phandle = <0x297>;
 
 			qcom,msm-dai-q6-mi2s-prim {
 				compatible = "qcom,msm-dai-q6-mi2s";
-				phandle = <0x137>;
+				phandle = <0x133>;
 				qcom,msm-dai-q6-mi2s-dev-id = <0x00>;
 				qcom,msm-mi2s-rx-lines = <0x03>;
 				qcom,msm-mi2s-tx-lines = <0x00>;
@@ -9698,7 +9698,7 @@
 
 			qcom,msm-dai-q6-mi2s-quat {
 				compatible = "qcom,msm-dai-q6-mi2s";
-				phandle = <0x13a>;
+				phandle = <0x136>;
 				qcom,msm-dai-q6-mi2s-dev-id = <0x03>;
 				qcom,msm-mi2s-rx-lines = <0x01>;
 				qcom,msm-mi2s-tx-lines = <0x02>;
@@ -9706,7 +9706,7 @@
 
 			qcom,msm-dai-q6-mi2s-quin {
 				compatible = "qcom,msm-dai-q6-mi2s";
-				phandle = <0x13b>;
+				phandle = <0x137>;
 				qcom,msm-dai-q6-mi2s-dev-id = <0x04>;
 				qcom,msm-mi2s-rx-lines = <0x01>;
 				qcom,msm-mi2s-tx-lines = <0x02>;
@@ -9714,7 +9714,7 @@
 
 			qcom,msm-dai-q6-mi2s-sec {
 				compatible = "qcom,msm-dai-q6-mi2s";
-				phandle = <0x138>;
+				phandle = <0x134>;
 				qcom,msm-dai-q6-mi2s-dev-id = <0x01>;
 				qcom,msm-mi2s-rx-lines = <0x01>;
 				qcom,msm-mi2s-tx-lines = <0x00>;
@@ -9722,7 +9722,7 @@
 
 			qcom,msm-dai-q6-mi2s-senary {
 				compatible = "qcom,msm-dai-q6-mi2s";
-				phandle = <0x13c>;
+				phandle = <0x138>;
 				qcom,msm-dai-q6-mi2s-dev-id = <0x06>;
 				qcom,msm-mi2s-rx-lines = <0x00>;
 				qcom,msm-mi2s-tx-lines = <0x03>;
@@ -9730,7 +9730,7 @@
 
 			qcom,msm-dai-q6-mi2s-tert {
 				compatible = "qcom,msm-dai-q6-mi2s";
-				phandle = <0x139>;
+				phandle = <0x135>;
 				qcom,msm-dai-q6-mi2s-dev-id = <0x02>;
 				qcom,msm-mi2s-rx-lines = <0x00>;
 				qcom,msm-mi2s-tx-lines = <0x03>;
@@ -9742,206 +9742,206 @@
 
 			qcom,msm-dai-q6-afe-loopback-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x29d>;
+				phandle = <0x29c>;
 				qcom,msm-dai-q6-dev-id = <0x6001>;
 			};
 
 			qcom,msm-dai-q6-afe-proxy-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x14b>;
+				phandle = <0x147>;
 				qcom,msm-dai-q6-dev-id = <0xf1>;
 			};
 
 			qcom,msm-dai-q6-afe-proxy-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x14c>;
+				phandle = <0x148>;
 				qcom,msm-dai-q6-dev-id = <0xf0>;
 			};
 
 			qcom,msm-dai-q6-be-afe-pcm-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x149>;
+				phandle = <0x145>;
 				qcom,msm-dai-q6-dev-id = <0xe0>;
 			};
 
 			qcom,msm-dai-q6-be-afe-pcm-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x14a>;
+				phandle = <0x146>;
 				qcom,msm-dai-q6-dev-id = <0xe1>;
 			};
 
 			qcom,msm-dai-q6-bt-sco-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x145>;
+				phandle = <0x141>;
 				qcom,msm-dai-q6-dev-id = <0x3000>;
 			};
 
 			qcom,msm-dai-q6-bt-sco-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x146>;
+				phandle = <0x142>;
 				qcom,msm-dai-q6-dev-id = <0x3001>;
 			};
 
 			qcom,msm-dai-q6-incall-music-2-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x150>;
+				phandle = <0x14c>;
 				qcom,msm-dai-q6-dev-id = <0x8002>;
 			};
 
 			qcom,msm-dai-q6-incall-music-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x14f>;
+				phandle = <0x14b>;
 				qcom,msm-dai-q6-dev-id = <0x8005>;
 			};
 
 			qcom,msm-dai-q6-incall-record-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x14d>;
+				phandle = <0x149>;
 				qcom,msm-dai-q6-dev-id = <0x8003>;
 			};
 
 			qcom,msm-dai-q6-incall-record-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x14e>;
+				phandle = <0x14a>;
 				qcom,msm-dai-q6-dev-id = <0x8004>;
 			};
 
 			qcom,msm-dai-q6-int-fm-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x147>;
+				phandle = <0x143>;
 				qcom,msm-dai-q6-dev-id = <0x3004>;
 			};
 
 			qcom,msm-dai-q6-int-fm-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x148>;
+				phandle = <0x144>;
 				qcom,msm-dai-q6-dev-id = <0x3005>;
 			};
 
 			qcom,msm-dai-q6-sb-0-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x13d>;
+				phandle = <0x139>;
 				qcom,msm-dai-q6-dev-id = <0x4000>;
 			};
 
 			qcom,msm-dai-q6-sb-0-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x13e>;
+				phandle = <0x13a>;
 				qcom,msm-dai-q6-dev-id = <0x4001>;
 			};
 
 			qcom,msm-dai-q6-sb-1-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x13f>;
+				phandle = <0x13b>;
 				qcom,msm-dai-q6-dev-id = <0x4002>;
 			};
 
 			qcom,msm-dai-q6-sb-1-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x140>;
+				phandle = <0x13c>;
 				qcom,msm-dai-q6-dev-id = <0x4003>;
 			};
 
 			qcom,msm-dai-q6-sb-2-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x167>;
+				phandle = <0x163>;
 				qcom,msm-dai-q6-dev-id = <0x4004>;
 			};
 
 			qcom,msm-dai-q6-sb-2-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x168>;
+				phandle = <0x164>;
 				qcom,msm-dai-q6-dev-id = <0x4005>;
 			};
 
 			qcom,msm-dai-q6-sb-3-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x141>;
+				phandle = <0x13d>;
 				qcom,msm-dai-q6-dev-id = <0x4006>;
 			};
 
 			qcom,msm-dai-q6-sb-3-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x142>;
+				phandle = <0x13e>;
 				qcom,msm-dai-q6-dev-id = <0x4007>;
 			};
 
 			qcom,msm-dai-q6-sb-4-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x143>;
+				phandle = <0x13f>;
 				qcom,msm-dai-q6-dev-id = <0x4008>;
 			};
 
 			qcom,msm-dai-q6-sb-4-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x144>;
+				phandle = <0x140>;
 				qcom,msm-dai-q6-dev-id = <0x4009>;
 			};
 
 			qcom,msm-dai-q6-sb-5-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x16a>;
+				phandle = <0x166>;
 				qcom,msm-dai-q6-dev-id = <0x400a>;
 			};
 
 			qcom,msm-dai-q6-sb-5-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x169>;
+				phandle = <0x165>;
 				qcom,msm-dai-q6-dev-id = <0x400b>;
 			};
 
 			qcom,msm-dai-q6-sb-6-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x16b>;
+				phandle = <0x167>;
 				qcom,msm-dai-q6-dev-id = <0x400c>;
 			};
 
 			qcom,msm-dai-q6-sb-7-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x299>;
+				phandle = <0x298>;
 				qcom,msm-dai-q6-dev-id = <0x400e>;
 			};
 
 			qcom,msm-dai-q6-sb-7-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x29a>;
+				phandle = <0x299>;
 				qcom,msm-dai-q6-dev-id = <0x400f>;
 			};
 
 			qcom,msm-dai-q6-sb-8-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x29b>;
+				phandle = <0x29a>;
 				qcom,msm-dai-q6-dev-id = <0x4010>;
 			};
 
 			qcom,msm-dai-q6-sb-8-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x29c>;
+				phandle = <0x29b>;
 				qcom,msm-dai-q6-dev-id = <0x4011>;
 			};
 
 			qcom,msm-dai-q6-usb-audio-rx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x29e>;
+				phandle = <0x29d>;
 				qcom,msm-dai-q6-dev-id = <0x7000>;
 			};
 
 			qcom,msm-dai-q6-usb-audio-tx {
 				compatible = "qcom,msm-dai-q6-dev";
-				phandle = <0x29f>;
+				phandle = <0x29e>;
 				qcom,msm-dai-q6-dev-id = <0x7001>;
 			};
 		};
 
 		qcom,msm-dai-q6-dp {
 			compatible = "qcom,msm-dai-q6-hdmi";
-			phandle = <0x297>;
+			phandle = <0x296>;
 			qcom,msm-dai-q6-dev-id = <0x6020>;
 		};
 
 		qcom,msm-dai-q6-hdmi {
 			compatible = "qcom,msm-dai-q6-hdmi";
-			phandle = <0x296>;
+			phandle = <0x295>;
 			qcom,msm-dai-q6-dev-id = <0x08>;
 		};
 
@@ -9960,7 +9960,7 @@
 
 			qcom,msm-dai-q6-tdm-pri-rx-0 {
 				compatible = "qcom,msm-dai-q6-tdm";
-				phandle = <0x2a6>;
+				phandle = <0x2a5>;
 				qcom,msm-cpudai-tdm-data-align = <0x00>;
 				qcom,msm-cpudai-tdm-dev-id = <0x9000>;
 			};
@@ -9981,7 +9981,7 @@
 
 			qcom,msm-dai-q6-tdm-pri-tx-0 {
 				compatible = "qcom,msm-dai-q6-tdm";
-				phandle = <0x2a7>;
+				phandle = <0x2a6>;
 				qcom,msm-cpudai-tdm-data-align = <0x00>;
 				qcom,msm-cpudai-tdm-dev-id = <0x9001>;
 			};
@@ -9989,7 +9989,7 @@
 
 		qcom,msm-dai-tdm-quat-rx {
 			compatible = "qcom,msm-dai-tdm";
-			phandle = <0x2ac>;
+			phandle = <0x2ab>;
 			qcom,msm-cpudai-tdm-clk-internal = <0x01>;
 			qcom,msm-cpudai-tdm-clk-rate = <0x177000>;
 			qcom,msm-cpudai-tdm-data-delay = <0x01>;
@@ -10003,7 +10003,7 @@
 
 			qcom,msm-dai-q6-tdm-quat-rx-0 {
 				compatible = "qcom,msm-dai-q6-tdm";
-				phandle = <0x2ad>;
+				phandle = <0x2ac>;
 				qcom,msm-cpudai-tdm-data-align = <0x00>;
 				qcom,msm-cpudai-tdm-dev-id = <0x9030>;
 			};
@@ -10024,7 +10024,7 @@
 
 			qcom,msm-dai-q6-tdm-quat-tx-0 {
 				compatible = "qcom,msm-dai-q6-tdm";
-				phandle = <0x2ae>;
+				phandle = <0x2ad>;
 				qcom,msm-cpudai-tdm-data-align = <0x00>;
 				qcom,msm-cpudai-tdm-dev-id = <0x9031>;
 			};
@@ -10045,7 +10045,7 @@
 
 			qcom,msm-dai-q6-tdm-quin-rx-0 {
 				compatible = "qcom,msm-dai-q6-tdm";
-				phandle = <0x2af>;
+				phandle = <0x2ae>;
 				qcom,msm-cpudai-tdm-data-align = <0x00>;
 				qcom,msm-cpudai-tdm-dev-id = <0x9040>;
 			};
@@ -10066,7 +10066,7 @@
 
 			qcom,msm-dai-q6-tdm-quin-tx-0 {
 				compatible = "qcom,msm-dai-q6-tdm";
-				phandle = <0x2b0>;
+				phandle = <0x2af>;
 				qcom,msm-cpudai-tdm-data-align = <0x00>;
 				qcom,msm-cpudai-tdm-dev-id = <0x9041>;
 			};
@@ -10087,7 +10087,7 @@
 
 			qcom,msm-dai-q6-tdm-sec-rx-0 {
 				compatible = "qcom,msm-dai-q6-tdm";
-				phandle = <0x2a8>;
+				phandle = <0x2a7>;
 				qcom,msm-cpudai-tdm-data-align = <0x00>;
 				qcom,msm-cpudai-tdm-dev-id = <0x9010>;
 			};
@@ -10108,7 +10108,7 @@
 
 			qcom,msm-dai-q6-tdm-sec-tx-0 {
 				compatible = "qcom,msm-dai-q6-tdm";
-				phandle = <0x2a9>;
+				phandle = <0x2a8>;
 				qcom,msm-cpudai-tdm-data-align = <0x00>;
 				qcom,msm-cpudai-tdm-dev-id = <0x9011>;
 			};
@@ -10129,7 +10129,7 @@
 
 			qcom,msm-dai-q6-tdm-tert-rx-0 {
 				compatible = "qcom,msm-dai-q6-tdm";
-				phandle = <0x2aa>;
+				phandle = <0x2a9>;
 				qcom,msm-cpudai-tdm-data-align = <0x00>;
 				qcom,msm-cpudai-tdm-dev-id = <0x9020>;
 			};
@@ -10150,7 +10150,7 @@
 
 			qcom,msm-dai-q6-tdm-tert-tx-0 {
 				compatible = "qcom,msm-dai-q6-tdm";
-				phandle = <0x2ab>;
+				phandle = <0x2aa>;
 				qcom,msm-cpudai-tdm-data-align = <0x00>;
 				qcom,msm-cpudai-tdm-dev-id = <0x9021>;
 			};
@@ -10158,7 +10158,7 @@
 
 		qcom,msm-hdmi-dba-codec-rx {
 			compatible = "qcom,msm-hdmi-dba-codec-rx";
-			phandle = <0x16c>;
+			phandle = <0x168>;
 			qcom,dba-bridge-chip = "adv7533";
 		};
 
@@ -10207,40 +10207,40 @@
 
 		qcom,msm-lsm-client {
 			compatible = "qcom,msm-lsm-client";
-			phandle = <0x133>;
+			phandle = <0x12f>;
 		};
 
 		qcom,msm-pcm {
 			compatible = "qcom,msm-pcm-dsp";
-			phandle = <0x12a>;
+			phandle = <0x126>;
 			qcom,msm-pcm-dsp-id = <0x00>;
 		};
 
 		qcom,msm-pcm-afe {
 			compatible = "qcom,msm-pcm-afe";
-			phandle = <0x132>;
+			phandle = <0x12e>;
 		};
 
 		qcom,msm-pcm-dsp-noirq {
 			compatible = "qcom,msm-pcm-dsp-noirq";
-			phandle = <0x135>;
+			phandle = <0x131>;
 			qcom,latency-level = "ultra";
 			qcom,msm-pcm-low-latency;
 		};
 
 		qcom,msm-pcm-hostless {
 			compatible = "qcom,msm-pcm-hostless";
-			phandle = <0x131>;
+			phandle = <0x12d>;
 		};
 
 		qcom,msm-pcm-loopback {
 			compatible = "qcom,msm-pcm-loopback";
-			phandle = <0x12f>;
+			phandle = <0x12b>;
 		};
 
 		qcom,msm-pcm-low-latency {
 			compatible = "qcom,msm-pcm-dsp";
-			phandle = <0x12b>;
+			phandle = <0x127>;
 			qcom,latency-level = "regular";
 			qcom,msm-pcm-dsp-id = <0x01>;
 			qcom,msm-pcm-low-latency;
@@ -10248,18 +10248,18 @@
 
 		qcom,msm-pcm-routing {
 			compatible = "qcom,msm-pcm-routing";
-			phandle = <0x134>;
+			phandle = <0x130>;
 		};
 
 		qcom,msm-pcm-voice {
 			compatible = "qcom,msm-pcm-voice";
-			phandle = <0x12e>;
+			phandle = <0x12a>;
 			qcom,destroy-cvd;
 		};
 
 		qcom,msm-pri-auxpcm {
 			compatible = "qcom,msm-auxpcm-dev";
-			phandle = <0x136>;
+			phandle = <0x132>;
 			qcom,msm-auxpcm-interface = "primary";
 			qcom,msm-cpudai-afe-clk-ver = <0x02>;
 			qcom,msm-cpudai-auxpcm-data = <0x00 0x00>;
@@ -10274,7 +10274,7 @@
 
 		qcom,msm-quat-auxpcm {
 			compatible = "qcom,msm-auxpcm-dev";
-			phandle = <0x2a3>;
+			phandle = <0x2a2>;
 			qcom,msm-auxpcm-interface = "quaternary";
 			qcom,msm-cpudai-afe-clk-ver = <0x02>;
 			qcom,msm-cpudai-auxpcm-data = <0x00 0x00>;
@@ -10289,7 +10289,7 @@
 
 		qcom,msm-quin-auxpcm {
 			compatible = "qcom,msm-auxpcm-dev";
-			phandle = <0x2a4>;
+			phandle = <0x2a3>;
 			qcom,msm-auxpcm-interface = "quinary";
 			qcom,msm-cpudai-afe-clk-ver = <0x02>;
 			qcom,msm-cpudai-auxpcm-data = <0x00 0x00>;
@@ -10309,7 +10309,7 @@
 
 		qcom,msm-sec-auxpcm {
 			compatible = "qcom,msm-auxpcm-dev";
-			phandle = <0x2a1>;
+			phandle = <0x2a0>;
 			qcom,msm-auxpcm-interface = "secondary";
 			qcom,msm-cpudai-afe-clk-ver = <0x02>;
 			qcom,msm-cpudai-auxpcm-data = <0x00 0x00>;
@@ -10324,18 +10324,18 @@
 
 		qcom,msm-ssc-sensors {
 			compatible = "qcom,msm-ssc-sensors";
-			phandle = <0x294>;
+			phandle = <0x293>;
 			status = "ok";
 		};
 
 		qcom,msm-stub-codec {
 			compatible = "qcom,msm-stub-codec";
-			phandle = <0x151>;
+			phandle = <0x14d>;
 		};
 
 		qcom,msm-tert-auxpcm {
 			compatible = "qcom,msm-auxpcm-dev";
-			phandle = <0x2a2>;
+			phandle = <0x2a1>;
 			qcom,msm-auxpcm-interface = "tertiary";
 			qcom,msm-cpudai-afe-clk-ver = <0x02>;
 			qcom,msm-cpudai-auxpcm-data = <0x00 0x00>;
@@ -10350,7 +10350,7 @@
 
 		qcom,msm-ultra-low-latency {
 			compatible = "qcom,msm-pcm-dsp";
-			phandle = <0x12c>;
+			phandle = <0x128>;
 			qcom,latency-level = "ultra";
 			qcom,msm-pcm-dsp-id = <0x02>;
 			qcom,msm-pcm-low-latency;
@@ -10358,7 +10358,7 @@
 
 		qcom,msm-voip-dsp {
 			compatible = "qcom,msm-voip-dsp";
-			phandle = <0x12d>;
+			phandle = <0x129>;
 		};
 
 		qcom,msm_fastrpc {
@@ -10378,16 +10378,16 @@
 			clocks = <0x25 0xe97a8354 0x25 0x111cde81 0x25 0x67544d62 0x25 0xde2adeb1>;
 			compatible = "qcom,pil-q6v55-mss";
 			interrupts = <0x00 0x18 0x01>;
-			memory-region = <0x118>;
-			phandle = <0x292>;
+			memory-region = <0x114>;
+			phandle = <0x291>;
 			qcom,active-clock-names = "iface_clk\0bus_clk\0mem_clk";
 			qcom,firmware-name = "modem";
-			qcom,gpio-err-fatal = <0x116 0x00 0x00>;
-			qcom,gpio-err-ready = <0x116 0x01 0x00>;
-			qcom,gpio-force-stop = <0x117 0x00 0x00>;
-			qcom,gpio-proxy-unvote = <0x116 0x02 0x00>;
-			qcom,gpio-shutdown-ack = <0x116 0x07 0x00>;
-			qcom,gpio-stop-ack = <0x116 0x03 0x00>;
+			qcom,gpio-err-fatal = <0x112 0x00 0x00>;
+			qcom,gpio-err-ready = <0x112 0x01 0x00>;
+			qcom,gpio-force-stop = <0x113 0x00 0x00>;
+			qcom,gpio-proxy-unvote = <0x112 0x02 0x00>;
+			qcom,gpio-shutdown-ack = <0x112 0x07 0x00>;
+			qcom,gpio-stop-ack = <0x112 0x03 0x00>;
 			qcom,override-acc-1 = <0x80800000>;
 			qcom,pas-id = <0x05>;
 			qcom,pil-mss-memsetup;
@@ -10403,11 +10403,11 @@
 			reg-names = "qdsp6_base\0halt_q6\0halt_modem\0halt_nc\0rmb_base\0restart_reg";
 			vdd_cx-supply = <0xbf>;
 			vdd_cx-voltage = <0x180>;
-			vdd_mss-supply = <0x114>;
+			vdd_mss-supply = <0x110>;
 			vdd_mss-uV = <0x180>;
-			vdd_mx-supply = <0x115>;
+			vdd_mx-supply = <0x111>;
 			vdd_mx-uV = <0x180>;
-			vdd_pll-supply = <0xf2>;
+			vdd_pll-supply = <0xed>;
 		};
 
 		qcom,pronto@a21b000 {
@@ -10415,15 +10415,15 @@
 			clocks = <0x25 0x89dae6d0 0x25 0xd390d2 0x25 0x94de4919 0x25 0xd4415c9b 0x25 0x37a21414>;
 			compatible = "qcom,pil-tz-generic";
 			interrupts = <0x00 0x95 0x01>;
-			memory-region = <0x11f>;
+			memory-region = <0x11b>;
 			proxy-reg-names = "vdd_pronto_pll";
 			qcom,firmware-name = "wcnss";
-			qcom,gpio-err-fatal = <0x11d 0x00 0x00>;
-			qcom,gpio-err-ready = <0x11d 0x01 0x00>;
-			qcom,gpio-force-stop = <0x11e 0x00 0x00>;
-			qcom,gpio-proxy-unvote = <0x11d 0x02 0x00>;
-			qcom,gpio-stop-ack = <0x11d 0x03 0x00>;
-			qcom,mas-crypto = <0x119>;
+			qcom,gpio-err-fatal = <0x119 0x00 0x00>;
+			qcom,gpio-err-ready = <0x119 0x01 0x00>;
+			qcom,gpio-force-stop = <0x11a 0x00 0x00>;
+			qcom,gpio-proxy-unvote = <0x119 0x02 0x00>;
+			qcom,gpio-stop-ack = <0x119 0x03 0x00>;
+			qcom,mas-crypto = <0x115>;
 			qcom,pas-id = <0x06>;
 			qcom,proxy-clock-names = "xo\0scm_core_clk\0scm_iface_clk\0scm_bus_clk\0scm_core_clk_src";
 			qcom,proxy-timeout-ms = <0x2710>;
@@ -10432,7 +10432,7 @@
 			qcom,ssctl-instance-id = <0x13>;
 			qcom,sysmon-id = <0x06>;
 			reg = <0xa21b000 0x3000>;
-			vdd_pronto_pll-supply = <0xf2>;
+			vdd_pronto_pll-supply = <0xed>;
 			vdd_pronto_pll-uV-uA = <0x1b7740 0x4650>;
 		};
 
@@ -10453,7 +10453,7 @@
 
 		qcom,rpm-smd {
 			compatible = "qcom,rpm-smd";
-			phandle = <0x25b>;
+			phandle = <0x25a>;
 			rpm-channel-name = "rpm_requests";
 			rpm-channel-type = <0x0f>;
 
@@ -10482,7 +10482,7 @@
 
 				regulator-l1 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x264>;
+					phandle = <0x263>;
 					qcom,init-voltage = <0xec540>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x119400>;
@@ -10502,7 +10502,7 @@
 
 				regulator-l10 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x25e>;
+					phandle = <0x25d>;
 					qcom,init-voltage = <0x2cfba0>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x325aa0>;
@@ -10522,7 +10522,7 @@
 
 				regulator-l11 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x10b>;
+					phandle = <0x107>;
 					qcom,init-voltage = <0x2932e0>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x325aa0>;
@@ -10542,7 +10542,7 @@
 
 				regulator-l12 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x10c>;
+					phandle = <0x108>;
 					qcom,init-voltage = <0x192580>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x2f4d60>;
@@ -10582,7 +10582,7 @@
 
 				regulator-l14 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x25f>;
+					phandle = <0x25e>;
 					qcom,init-voltage = <0x1b7740>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x2e91e0>;
@@ -10602,7 +10602,7 @@
 
 				regulator-l15 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x260>;
+					phandle = <0x25f>;
 					qcom,init-voltage = <0x1b7740>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x2e91e0>;
@@ -10622,7 +10622,7 @@
 
 				regulator-l16 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x261>;
+					phandle = <0x260>;
 					qcom,init-voltage = <0x1b7740>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x1b7740>;
@@ -10662,7 +10662,7 @@
 
 				regulator-l19 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x121>;
+					phandle = <0x11d>;
 					qcom,init-voltage = <0x12ad40>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x149970>;
@@ -10682,7 +10682,7 @@
 
 				regulator-l2 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x25d>;
+					phandle = <0x25c>;
 					qcom,init-voltage = <0x124f80>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x124f80>;
@@ -10702,7 +10702,7 @@
 
 				regulator-l22 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x184>;
+					phandle = <0x180>;
 					qcom,init-voltage = <0x2ab980>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x2c4020>;
@@ -10742,7 +10742,7 @@
 
 				regulator-l3 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x17d>;
+					phandle = <0x179>;
 					qcom,init-voltage = <0x100590>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x124f80>;
@@ -10762,7 +10762,7 @@
 
 				regulator-l4 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x265>;
+					phandle = <0x264>;
 					qcom,init-voltage = <0x1b7740>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x1b7740>;
@@ -10822,7 +10822,7 @@
 
 				regulator-l7 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0xf2>;
+					phandle = <0xed>;
 					qcom,init-voltage = <0x1b7740>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x1b7740>;
@@ -10852,7 +10852,7 @@
 
 				regulator-l8 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0xea>;
+					phandle = <0xfe>;
 					qcom,init-voltage = <0x2c4020>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x2c4020>;
@@ -10872,7 +10872,7 @@
 
 				regulator-l9 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x122>;
+					phandle = <0x11e>;
 					qcom,init-voltage = <0x2dc6c0>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x325aa0>;
@@ -10892,7 +10892,7 @@
 
 				regulator-s1 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x114>;
+					phandle = <0x110>;
 					qcom,set = <0x03>;
 					qcom,use-voltage-level;
 					regulator-max-microvolt = <0x200>;
@@ -10914,7 +10914,7 @@
 					#cooling-cells = <0x02>;
 					compatible = "qcom,regulator-cooling-device";
 					phandle = <0x97>;
-					regulator-cdev-supply = <0xf1>;
+					regulator-cdev-supply = <0xec>;
 					regulator-levels = <0x140 0x10>;
 				};
 
@@ -10927,7 +10927,7 @@
 
 				regulator-s2-floor-level {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0xf1>;
+					phandle = <0xec>;
 					qcom,always-send-voltage;
 					qcom,set = <0x03>;
 					qcom,use-voltage-floor-level;
@@ -10967,7 +10967,7 @@
 
 				regulator-s3 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x25c>;
+					phandle = <0x25b>;
 					qcom,init-voltage = <0xd0fc0>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x138800>;
@@ -10987,7 +10987,7 @@
 
 				regulator-s4 {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0xf7>;
+					phandle = <0xf2>;
 					qcom,init-voltage = <0x1cfde0>;
 					qcom,set = <0x03>;
 					regulator-max-microvolt = <0x1f20c0>;
@@ -11014,7 +11014,7 @@
 
 				regulator-s7-level {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x262>;
+					phandle = <0x261>;
 					qcom,always-send-voltage;
 					qcom,init-voltage-level = <0x10>;
 					qcom,set = <0x03>;
@@ -11026,7 +11026,7 @@
 
 				regulator-s7-level-ao {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x115>;
+					phandle = <0x111>;
 					qcom,always-send-voltage;
 					qcom,set = <0x01>;
 					qcom,use-voltage-level;
@@ -11037,7 +11037,7 @@
 
 				regulator-s7-level-so {
 					compatible = "qcom,rpm-smd-regulator";
-					phandle = <0x263>;
+					phandle = <0x262>;
 					qcom,init-voltage-level = <0x10>;
 					qcom,set = <0x02>;
 					qcom,use-voltage-level;
@@ -11099,67 +11099,67 @@
 			compatible = "qcom,smdtty";
 
 			qcom,smdtty-apps-fm {
-				phandle = <0x280>;
+				phandle = <0x27f>;
 				qcom,smdtty-port-name = "APPS_FM";
 				qcom,smdtty-remote = "wcnss";
 			};
 
 			qcom,smdtty-apps-riva-bt-cmd {
-				phandle = <0x282>;
+				phandle = <0x281>;
 				qcom,smdtty-port-name = "APPS_RIVA_BT_CMD";
 				qcom,smdtty-remote = "wcnss";
 			};
 
 			qcom,smdtty-data1 {
-				phandle = <0x286>;
+				phandle = <0x285>;
 				qcom,smdtty-port-name = "DATA1";
 				qcom,smdtty-remote = "modem";
 			};
 
 			qcom,smdtty-data11 {
-				phandle = <0x288>;
+				phandle = <0x287>;
 				qcom,smdtty-port-name = "DATA11";
 				qcom,smdtty-remote = "modem";
 			};
 
 			qcom,smdtty-data21 {
-				phandle = <0x289>;
+				phandle = <0x288>;
 				qcom,smdtty-port-name = "DATA21";
 				qcom,smdtty-remote = "modem";
 			};
 
 			qcom,smdtty-data4 {
-				phandle = <0x287>;
+				phandle = <0x286>;
 				qcom,smdtty-port-name = "DATA4";
 				qcom,smdtty-remote = "modem";
 			};
 
 			qcom,smdtty-mbalbridge {
-				phandle = <0x283>;
+				phandle = <0x282>;
 				qcom,smdtty-port-name = "MBALBRIDGE";
 				qcom,smdtty-remote = "modem";
 			};
 
 			smdtty-apps-riva-ant-cmd {
-				phandle = <0x284>;
+				phandle = <0x283>;
 				qcom,smdtty-port-name = "APPS_RIVA_ANT_CMD";
 				qcom,smdtty-remote = "wcnss";
 			};
 
 			smdtty-apps-riva-ant-data {
-				phandle = <0x285>;
+				phandle = <0x284>;
 				qcom,smdtty-port-name = "APPS_RIVA_ANT_DATA";
 				qcom,smdtty-remote = "wcnss";
 			};
 
 			smdtty-apps-riva-bt-acl {
-				phandle = <0x281>;
+				phandle = <0x280>;
 				qcom,smdtty-port-name = "APPS_RIVA_BT_ACL";
 				qcom,smdtty-remote = "wcnss";
 			};
 
 			smdtty-loopback {
-				phandle = <0x28a>;
+				phandle = <0x289>;
 				qcom,smdtty-dev-name = "LOOPBACK_TTY";
 				qcom,smdtty-port-name = "LOOPBACK";
 				qcom,smdtty-remote = "modem";
@@ -11374,7 +11374,7 @@
 			compatible = "qcom,smp2pgpio";
 			gpio-controller;
 			interrupt-controller;
-			phandle = <0x116>;
+			phandle = <0x112>;
 			qcom,entry-name = "slave-kernel";
 			qcom,is-inbound;
 			qcom,remote-pid = <0x01>;
@@ -11386,7 +11386,7 @@
 			compatible = "qcom,smp2pgpio";
 			gpio-controller;
 			interrupt-controller;
-			phandle = <0x117>;
+			phandle = <0x113>;
 			qcom,entry-name = "master-kernel";
 			qcom,remote-pid = <0x01>;
 		};
@@ -11397,7 +11397,7 @@
 			compatible = "qcom,smp2pgpio";
 			gpio-controller;
 			interrupt-controller;
-			phandle = <0x11a>;
+			phandle = <0x116>;
 			qcom,entry-name = "slave-kernel";
 			qcom,is-inbound;
 			qcom,remote-pid = <0x02>;
@@ -11409,7 +11409,7 @@
 			compatible = "qcom,smp2pgpio";
 			gpio-controller;
 			interrupt-controller;
-			phandle = <0x11b>;
+			phandle = <0x117>;
 			qcom,entry-name = "master-kernel";
 			qcom,remote-pid = <0x02>;
 		};
@@ -11420,7 +11420,7 @@
 			compatible = "qcom,smp2pgpio";
 			gpio-controller;
 			interrupt-controller;
-			phandle = <0x11d>;
+			phandle = <0x119>;
 			qcom,entry-name = "slave-kernel";
 			qcom,is-inbound;
 			qcom,remote-pid = <0x04>;
@@ -11432,7 +11432,7 @@
 			compatible = "qcom,smp2pgpio";
 			gpio-controller;
 			interrupt-controller;
-			phandle = <0x11e>;
+			phandle = <0x11a>;
 			qcom,entry-name = "master-kernel";
 			qcom,remote-pid = <0x04>;
 		};
@@ -11503,7 +11503,7 @@
 			interrupt-controller;
 			interrupt-names = "periph_irq";
 			interrupts = <0x00 0xbe 0x00>;
-			phandle = <0xf6>;
+			phandle = <0xf1>;
 			qcom,channel = <0x00>;
 			qcom,ee = <0x00>;
 			reg = <0x200f000 0x1000 0x2400000 0x800000 0x2c00000 0x800000 0x3800000 0x200000 0x200a000 0x2100>;
@@ -11553,7 +11553,7 @@
 							bias-disable;
 							function = "func1";
 							output-low;
-							phandle = <0x172>;
+							phandle = <0x16e>;
 							pins = "gpio1";
 							power-source = <0x00>;
 							qcom,drive-strength = <0x02>;
@@ -11567,7 +11567,7 @@
 					gpio-controller;
 					interrupt-names = "pm8953_mpp1\0pm8953_mpp2\0pm8953_mpp3\0pm8953_mpp4";
 					interrupts = <0x00 0xa0 0x00 0x00 0x00 0xa1 0x00 0x00 0x00 0xa2 0x00 0x00 0x00 0xa3 0x00 0x00>;
-					phandle = <0x268>;
+					phandle = <0x267>;
 					reg = <0xa000 0x400>;
 
 					backlight_therm {
@@ -11575,7 +11575,7 @@
 						bac_therm_default {
 							function = "analog";
 							input-enable;
-							phandle = <0xf5>;
+							phandle = <0xf0>;
 							pins = "mpp4";
 							qcom,amux-route = <0x03>;
 						};
@@ -11586,7 +11586,7 @@
 						pa_therm1_default {
 							function = "analog";
 							input-enable;
-							phandle = <0xf4>;
+							phandle = <0xef>;
 							pins = "mpp2";
 							qcom,amux-route = <0x01>;
 						};
@@ -11595,7 +11595,7 @@
 
 				qcom,coincell@2800 {
 					compatible = "qcom,qpnp-coincell";
-					phandle = <0x267>;
+					phandle = <0x266>;
 					reg = <0x2800 0x100>;
 				};
 
@@ -11603,7 +11603,7 @@
 					#address-cells = <0x01>;
 					#size-cells = <0x01>;
 					compatible = "qcom,qpnp-rtc";
-					phandle = <0x269>;
+					phandle = <0x268>;
 					qcom,qpnp-rtc-alarm-pwrup = <0x00>;
 					qcom,qpnp-rtc-write = <0x00>;
 					spmi-dev-container;
@@ -11622,7 +11622,7 @@
 					compatible = "qcom,qpnp-typec";
 					interrupt-names = "vrd-change\0ufp-detect\0ufp-detach\0dfp-detect\0dfp-detach\0vbus-err\0vconn-oc";
 					interrupts = <0x00 0xbf 0x00 0x01 0x00 0xbf 0x01 0x01 0x00 0xbf 0x02 0x01 0x00 0xbf 0x03 0x01 0x00 0xbf 0x04 0x01 0x00 0xbf 0x06 0x01 0x00 0xbf 0x07 0x01>;
-					phandle = <0x26a>;
+					phandle = <0x269>;
 					reg = <0xbf00 0x100>;
 					status = "disabled";
 				};
@@ -11665,7 +11665,7 @@
 
 				qcom,revid@100 {
 					compatible = "qcom,qpnp-revid";
-					phandle = <0x266>;
+					phandle = <0x265>;
 					reg = <0x100 0x100>;
 				};
 
@@ -11689,7 +11689,7 @@
 					interrupt-names = "eoc-int-en-set";
 					interrupts = <0x00 0x31 0x00 0x01>;
 					phandle = <0x8c>;
-					pinctrl-0 = <0xf4 0xf5>;
+					pinctrl-0 = <0xef 0xf0>;
 					pinctrl-names = "default";
 					qcom,adc-bit-resolution = <0x0f>;
 					qcom,adc-vdd-reference = <0x708>;
@@ -11864,7 +11864,7 @@
 				#address-cells = <0x01>;
 				#size-cells = <0x01>;
 				compatible = "qcom,spmi-pmic";
-				phandle = <0x26b>;
+				phandle = <0x26a>;
 				reg = <0x01 0x00>;
 
 				analog-codec@f000 {
@@ -11872,13 +11872,13 @@
 					#size-cells = <0x00>;
 					cdc-vdd-io-supply = <0x7a>;
 					cdc-vdd-mic-bias-supply = <0xbd>;
-					cdc-vdd-pa-supply = <0xf7>;
-					cdc-vdda-cp-supply = <0xf7>;
+					cdc-vdd-pa-supply = <0xf2>;
+					cdc-vdda-cp-supply = <0xf2>;
 					compatible = "qcom,pmic-analog-codec";
 					interrupt-names = "spk_cnp_int\0spk_clip_int\0spk_ocp_int\0ins_rem_det1\0but_rel_det\0but_press_det\0ins_rem_det\0mbhc_int\0ear_ocp_int\0hphr_ocp_int\0hphl_ocp_det\0ear_cnp_int\0hphr_cnp_int\0hphl_cnp_int";
-					interrupt-parent = <0xf6>;
+					interrupt-parent = <0xf1>;
 					interrupts = <0x01 0xf0 0x00 0x00 0x01 0xf0 0x01 0x00 0x01 0xf0 0x02 0x00 0x01 0xf0 0x03 0x00 0x01 0xf0 0x04 0x00 0x01 0xf0 0x05 0x00 0x01 0xf0 0x06 0x00 0x01 0xf0 0x07 0x00 0x01 0xf1 0x00 0x00 0x01 0xf1 0x01 0x00 0x01 0xf1 0x02 0x00 0x01 0xf1 0x03 0x00 0x01 0xf1 0x04 0x00 0x01 0xf1 0x05 0x00>;
-					phandle = <0x153>;
+					phandle = <0x14f>;
 					qcom,cdc-mclk-clk-rate = <0x927c00>;
 					qcom,cdc-on-demand-supplies = "cdc-vdd-mic-bias";
 					qcom,cdc-static-supplies = "cdc-vdd-io\0cdc-vdd-pa\0cdc-vdda-cp";
@@ -11895,7 +11895,7 @@
 
 					msm-dig-codec {
 						compatible = "qcom,msm-digital-codec";
-						phandle = <0x152>;
+						phandle = <0x14e>;
 						reg = <0xc0f0000 0x00>;
 					};
 				};
@@ -11903,7 +11903,7 @@
 				qcom,pwms@bc00 {
 					#pwm-cells = <0x02>;
 					compatible = "qcom,pwm-lpg";
-					phandle = <0x26c>;
+					phandle = <0x26b>;
 					reg = <0xbc00 0x100>;
 					reg-names = "lpg-base";
 					status = "ok";
@@ -11911,14 +11911,14 @@
 
 				spm-regulator@2000 {
 					compatible = "qcom,spm-regulator";
-					phandle = <0x127>;
+					phandle = <0x123>;
 					reg = <0x2000 0x100>;
 					regulator-max-microvolt = <0xef420>;
 					regulator-min-microvolt = <0x77a10>;
 					regulator-name = "pm8953_s5";
 
 					avs-limit-regulator {
-						phandle = <0x26d>;
+						phandle = <0x26c>;
 						regulator-max-microvolt = <0xef420>;
 						regulator-min-microvolt = <0x77a10>;
 						regulator-name = "pm8953_s5_avs_limit";
@@ -11953,7 +11953,7 @@
 					gpio-controller;
 					interrupt-names = "pmi632_gpio1\0pmi632_gpio2\0pmi632_gpio3\0pmi632_gpio4\0pmi632_gpio5\0pmi632_gpio6\0pmi632_gpio7\0pmi632_gpio8";
 					interrupts = <0x02 0xc0 0x00 0x00 0x02 0xc1 0x00 0x00 0x02 0xc2 0x00 0x00 0x02 0xc3 0x00 0x00 0x02 0xc4 0x00 0x00 0x02 0xc5 0x00 0x00 0x02 0xc6 0x00 0x00 0x02 0xc7 0x00 0x00>;
-					phandle = <0x26f>;
+					phandle = <0x26e>;
 					reg = <0xc000 0x800>;
 
 					pmi632_ctm {
@@ -11981,7 +11981,7 @@
 						quiet_therm_default {
 							bias-disable;
 							bias-high-impedance;
-							phandle = <0xf9>;
+							phandle = <0xf4>;
 							pins = "gpio3";
 						};
 					};
@@ -12000,7 +12000,7 @@
 
 						smb_therm_default {
 							bias-high-impedance;
-							phandle = <0xfa>;
+							phandle = <0xf5>;
 							pins = "gpio4";
 						};
 					};
@@ -12008,13 +12008,13 @@
 
 				qcom,pbs@7400 {
 					compatible = "qcom,qpnp-pbs";
-					phandle = <0xff>;
+					phandle = <0xfa>;
 					reg = <0x7400 0x100>;
 				};
 
 				qcom,power-on@800 {
 					compatible = "qcom,qpnp-power-on";
-					phandle = <0x26e>;
+					phandle = <0x26d>;
 					qcom,ps-hold-hard-reset-disable;
 					qcom,ps-hold-shutdown-disable;
 					qcom,s3-src = "kpdpwr";
@@ -12027,13 +12027,13 @@
 					#cooling-cells = <0x02>;
 					#size-cells = <0x01>;
 					compatible = "qcom,qpnp-smb5";
-					dpdm-supply = <0xfc>;
+					dpdm-supply = <0xf7>;
 					phandle = <0xb3>;
 					qcom,auto-recharge-soc = <0x63>;
-					qcom,battery-data = <0xfd>;
+					qcom,battery-data = <0xf8>;
 					qcom,chg-term-current-ma = <0xffffff38>;
 					qcom,chg-term-src = <0x01>;
-					qcom,chg-vadc = <0xfb>;
+					qcom,chg-vadc = <0xf6>;
 					qcom,connector-internal-pull-kohm = <0x64>;
 					qcom,flash-disable-soc = <0x05>;
 					qcom,float-option = <0x01>;
@@ -12041,7 +12041,7 @@
 					qcom,hw-connector-mitigation;
 					qcom,hw-die-temp-mitigation;
 					qcom,hw-jeita-enable;
-					qcom,pmic-revid = <0xf8>;
+					qcom,pmic-revid = <0xf3>;
 					qcom,step-charging-enable;
 					qcom,thermal-mitigation = <0x2dc6c0 0x2625a0 0x1e8480 0x16e360 0xf4240 0x7a120>;
 
@@ -12076,7 +12076,7 @@
 					};
 
 					qcom,smb5-vbus {
-						phandle = <0xf3>;
+						phandle = <0xee>;
 						regulator-name = "smb5-vbus";
 					};
 
@@ -12095,13 +12095,13 @@
 
 				qcom,revid@100 {
 					compatible = "qcom,qpnp-revid";
-					phandle = <0xf8>;
+					phandle = <0xf3>;
 					reg = <0x100 0x100>;
 				};
 
 				qcom,sdam@b600 {
 					compatible = "qcom,spmi-sdam";
-					phandle = <0xfe>;
+					phandle = <0xf9>;
 					reg = <0xb600 0x100>;
 				};
 
@@ -12118,13 +12118,13 @@
 					#address-cells = <0x01>;
 					#size-cells = <0x01>;
 					compatible = "qcom,qpnp-qg";
-					phandle = <0x270>;
-					qcom,battery-data = <0xfd>;
+					phandle = <0x26f>;
+					qcom,battery-data = <0xf8>;
 					qcom,hold-soc-while-full;
 					qcom,linearize-soc;
-					qcom,pmic-revid = <0xf8>;
+					qcom,pmic-revid = <0xf3>;
 					qcom,qg-iterm-ma = <0x15e>;
-					qcom,qg-vadc = <0xfb>;
+					qcom,qg-vadc = <0xf6>;
 
 					qcom,qg-sdam@b100 {
 						reg = <0xb100 0x100>;
@@ -12145,12 +12145,12 @@
 					compatible = "qcom,qpnp-vadc-hc\0qcom,qpnp-adc-hc-pm5";
 					interrupt-names = "eoc-int-en-set";
 					interrupts = <0x02 0x31 0x00 0x01>;
-					phandle = <0xfb>;
-					pinctrl-0 = <0xf9 0xfa>;
+					phandle = <0xf6>;
+					pinctrl-0 = <0xf4 0xf5>;
 					pinctrl-names = "default";
 					qcom,adc-full-scale-code = <0x70e4>;
 					qcom,adc-vdd-reference = <0x753>;
-					qcom,pmic-revid = <0xf8>;
+					qcom,pmic-revid = <0xf3>;
 					reg = <0x3100 0x100>;
 
 					chan@0 {
@@ -12367,7 +12367,7 @@
 					phandle = <0xa9>;
 					qcom,adc-full-scale-code = <0x70e4>;
 					qcom,adc-vdd-reference = <0x753>;
-					qcom,adc_tm-vadc = <0xfb>;
+					qcom,adc_tm-vadc = <0xf6>;
 					qcom,decimation = <0x00>;
 					qcom,fast-avg-setup = <0x00>;
 					reg = <0x3500 0x100>;
@@ -12389,33 +12389,33 @@
 				#address-cells = <0x01>;
 				#size-cells = <0x01>;
 				compatible = "qcom,spmi-pmic";
-				phandle = <0x271>;
+				phandle = <0x270>;
 				reg = <0x03 0x00>;
 
 				qcom,leds@d000 {
 					compatible = "qcom,tri-led";
-					phandle = <0x273>;
+					phandle = <0x272>;
 					reg = <0xd000 0x100>;
 
 					blue {
 						label = "blue";
 						led-sources = <0x02>;
 						linux,default-trigger = "timer";
-						pwms = <0x100 0x02 0xf4240>;
+						pwms = <0xfb 0x02 0xf4240>;
 					};
 
 					green {
 						label = "green";
 						led-sources = <0x01>;
 						linux,default-trigger = "timer";
-						pwms = <0x100 0x01 0xf4240>;
+						pwms = <0xfb 0x01 0xf4240>;
 					};
 
 					red {
 						label = "red";
 						led-sources = <0x00>;
 						linux,default-trigger = "timer";
-						pwms = <0x100 0x00 0xf4240>;
+						pwms = <0xfb 0x00 0xf4240>;
 					};
 				};
 
@@ -12424,10 +12424,10 @@
 					interrupt-names = "led-fault-irq\0all-ramp-down-done-irq\0all-ramp-up-done-irq";
 					interrupts = <0x03 0xd3 0x00 0x01 0x03 0xd3 0x03 0x01 0x03 0xd3 0x04 0x01>;
 					label = "flash";
-					phandle = <0x276>;
+					phandle = <0x275>;
 					qcom,isc-delay = <0xc0>;
 					qcom,open-circuit-det;
-					qcom,pmic-revid = <0xf8>;
+					qcom,pmic-revid = <0xf3>;
 					qcom,short-circuit-det;
 					qcom,thermal-derate-current = <0xc8 0x1f4 0x3e8>;
 					qcom,thermal-derate-en;
@@ -12473,7 +12473,7 @@
 
 					qcom,led_switch_1 {
 						label = "switch";
-						phandle = <0x277>;
+						phandle = <0x276>;
 						qcom,default-led-trigger = "switch1_trigger";
 						qcom,led-mask = <0x02>;
 						qcom,led-name = "led:switch_1";
@@ -12509,12 +12509,12 @@
 				qcom,pwms@b300 {
 					#pwm-cells = <0x02>;
 					compatible = "qcom,pwm-lpg";
-					nvmem = <0xfe>;
+					nvmem = <0xf9>;
 					nvmem-names = "ppg_sdam";
-					phandle = <0x100>;
+					phandle = <0xfb>;
 					qcom,lut-patterns = <0x00 0x00 0x00 0x0e 0x1c 0x2a 0x38 0x46 0x54 0x64 0x64 0x54 0x46 0x38 0x2a 0x1c 0x0e 0x00 0x00 0x00>;
 					qcom,lut-sdam-base = <0x80>;
-					qcom,pbs-client = <0xff>;
+					qcom,pbs-client = <0xfa>;
 					reg = <0xb300 0x500>;
 					reg-names = "lpg-base";
 
@@ -12548,7 +12548,7 @@
 
 				qcom,vibrator@5700 {
 					compatible = "qcom,qpnp-vibrator-ldo";
-					phandle = <0x272>;
+					phandle = <0x271>;
 					qcom,disable-overdrive;
 					qcom,vib-ldo-volt-uv = <0x2ab980>;
 					reg = <0x5700 0x100>;
@@ -12560,14 +12560,14 @@
 					compatible = "qcom,qpnp-lcdb-regulator";
 					interrupt-names = "sc-irq";
 					interrupts = <0x03 0xec 0x01 0x01>;
-					phandle = <0x274>;
-					qcom,pmic-revid = <0xf8>;
+					phandle = <0x273>;
+					qcom,pmic-revid = <0xf3>;
 					qcom,ttw-enable;
 					reg = <0xec00 0x100>;
 
 					bst {
 						label = "bst";
-						phandle = <0x275>;
+						phandle = <0x274>;
 						regulator-max-microvolt = <0x5fbfb8>;
 						regulator-min-microvolt = <0x47b760>;
 						regulator-name = "lcdb_bst";
@@ -12619,9 +12619,9 @@
 			clock-names = "core_clk\0iface_clk\0bus_clk\0scm_core_clk\0scm_iface_clk\0scm_bus_clk\0scm_core_clk_src";
 			clocks = <0x25 0xf76a02bb 0x25 0x8d778c6 0x25 0xcdf4c8f6 0x25 0xd390d2 0x25 0x94de4919 0x25 0xd4415c9b 0x25 0x37a21414>;
 			compatible = "qcom,pil-tz-generic";
-			memory-region = <0x120>;
+			memory-region = <0x11c>;
 			qcom,firmware-name = "venus";
-			qcom,mas-crypto = <0x119>;
+			qcom,mas-crypto = <0x115>;
 			qcom,msm-bus,name = "pil-venus";
 			qcom,msm-bus,num-cases = <0x02>;
 			qcom,msm-bus,num-paths = <0x01>;
@@ -12652,7 +12652,7 @@
 			interrupts = <0x00 0x39 0x00>;
 			max-clk-nominal = <0x17d78400>;
 			max-clk-turbo = <0x19bfcc00>;
-			phandle = <0x2b3>;
+			phandle = <0x2b2>;
 			qcom,clock-rates = <0x00 0x00 0xfe50fb0 0x00 0x00 0x00 0x00 0x00>;
 			qos-entries = <0x08>;
 			qos-regs = <0x2c4 0x2c8 0x2cc 0x2d0 0x2d4 0x2d8 0x2dc 0x2e0>;
@@ -12662,7 +12662,7 @@
 			vbif-entries = <0x01>;
 			vbif-regs = <0x124>;
 			vbif-settings = <0x03>;
-			vdd-supply = <0x175>;
+			vdd-supply = <0x171>;
 		};
 
 		qcom,vfe1@1b14000 {
@@ -12677,7 +12677,7 @@
 			interrupts = <0x00 0x1d 0x00>;
 			max-clk-nominal = <0x17d78400>;
 			max-clk-turbo = <0x19bfcc00>;
-			phandle = <0x2b4>;
+			phandle = <0x2b3>;
 			qcom,clock-rates = <0x00 0x00 0xfe50fb0 0x00 0x00 0x00 0x00 0x00>;
 			qos-entries = <0x08>;
 			qos-regs = <0x2c4 0x2c8 0x2cc 0x2d0 0x2d4 0x2d8 0x2dc 0x2e0>;
@@ -12687,7 +12687,7 @@
 			vbif-entries = <0x01>;
 			vbif-regs = <0x124>;
 			vbif-settings = <0x03>;
-			vdd-supply = <0x176>;
+			vdd-supply = <0x172>;
 		};
 
 		qcom,vidc@1d00000 {
@@ -12786,14 +12786,14 @@
 
 		qcom,wcnss-wlan@0a000000 {
 			clock-names = "xo\0rf_clk\0measure\0wcnss_debug\0snoc_wcnss";
-			clocks = <0x25 0x116b76f 0x25 0x24a30992 0x126 0x917968c2 0x25 0x709f430b 0x25 0xd3949ebc>;
+			clocks = <0x25 0x116b76f 0x25 0x24a30992 0x122 0x917968c2 0x25 0x709f430b 0x25 0xd3949ebc>;
 			compatible = "qcom,wcnss_wlan";
 			gpios = <0x86 0x4c 0x00 0x86 0x4d 0x00 0x86 0x4e 0x00 0x86 0x4f 0x00 0x86 0x50 0x00>;
 			interrupt-names = "wcnss_wlantx_irq\0wcnss_wlanrx_irq";
 			interrupts = <0x00 0x91 0x00 0x00 0x92 0x00>;
-			pinctrl-0 = <0x123>;
-			pinctrl-1 = <0x124>;
-			pinctrl-2 = <0x125>;
+			pinctrl-0 = <0x11f>;
+			pinctrl-1 = <0x120>;
+			pinctrl-2 = <0x121>;
 			pinctrl-names = "wcnss_default\0wcnss_sleep\0wcnss_gpio_default";
 			qcom,has-autodetect-xo;
 			qcom,has-pronto-hw;
@@ -12802,19 +12802,19 @@
 			qcom,iris-vdddig-supply = <0x7a>;
 			qcom,iris-vdddig-voltage-level = <0x1b7740 0x00 0x1b7740>;
 			qcom,iris-vddpa-current = <0x7dbb8>;
-			qcom,iris-vddpa-supply = <0x122>;
+			qcom,iris-vddpa-supply = <0x11e>;
 			qcom,iris-vddpa-voltage-level = <0x325aa0 0x00 0x325aa0>;
 			qcom,iris-vddrfa-current = <0x186a0>;
-			qcom,iris-vddrfa-supply = <0x121>;
+			qcom,iris-vddrfa-supply = <0x11d>;
 			qcom,iris-vddrfa-voltage-level = <0x149970 0x00 0x149970>;
 			qcom,iris-vddxo-current = <0x2710>;
-			qcom,iris-vddxo-supply = <0xf2>;
+			qcom,iris-vddxo-supply = <0xed>;
 			qcom,iris-vddxo-voltage-level = <0x1b7740 0x00 0x1b7740>;
 			qcom,is-pronto-v3;
 			qcom,pronto-vddcx-current = <0x00>;
 			qcom,pronto-vddcx-supply = <0xbf>;
 			qcom,pronto-vddmx-current = <0x00>;
-			qcom,pronto-vddmx-supply = <0x115>;
+			qcom,pronto-vddmx-supply = <0x111>;
 			qcom,pronto-vddpx-current = <0x00>;
 			qcom,pronto-vddpx-supply = <0x7a>;
 			qcom,snoc-wcnss-clock-freq = <0xbebc200>;
@@ -12844,7 +12844,7 @@
 			clocks = <0x25 0x37a21414 0x25 0xd390d2 0x25 0x94de4919 0x25 0xd4415c9b>;
 			compatible = "qcom,qcrypto";
 			interrupts = <0x00 0xcf 0x00>;
-			phandle = <0x290>;
+			phandle = <0x28f>;
 			qcom,bam-pipe-pair = <0x02>;
 			qcom,ce-device = <0x00>;
 			qcom,ce-hw-instance = <0x00>;
@@ -12873,7 +12873,7 @@
 
 				modem_current {
 					#cooling-cells = <0x02>;
-					phandle = <0x2f1>;
+					phandle = <0x2f0>;
 					qcom,qmi-dev-name = "modem_current";
 				};
 
@@ -12901,7 +12901,7 @@
 			clock-names = "iface_clk";
 			clocks = <0x25 0x397e7eaa>;
 			compatible = "qcom,msm-rng";
-			phandle = <0x28f>;
+			phandle = <0x28e>;
 			qcom,msm-bus,name = "msm-rng-noc";
 			qcom,msm-bus,num-cases = <0x02>;
 			qcom,msm-bus,num-paths = <0x01>;
@@ -12915,7 +12915,7 @@
 			clock-names = "core_clk_src\0core_clk\0iface_clk\0bus_clk";
 			clocks = <0x25 0x37a21414 0x25 0xd390d2 0x25 0x94de4919 0x25 0xd4415c9b>;
 			compatible = "qcom,qseecom";
-			phandle = <0x28e>;
+			phandle = <0x28d>;
 			qcom,ce-opp-freq = <0x5f5e100>;
 			qcom,commonlib64-loaded-by-uefi;
 			qcom,disk-encrypt-pipe-pair = <0x02>;
@@ -12935,7 +12935,7 @@
 		regulator@b018000 {
 			compatible = "qcom,cpr-regulator";
 			interrupts = <0x00 0x0f 0x00>;
-			mem-acc-supply = <0x128>;
+			mem-acc-supply = <0x124>;
 			phandle = <0xc4>;
 			qcom,cpr-apc-volt-step = <0x1388>;
 			qcom,cpr-corner-frequency-map = <0x01 0x4dd1e000 0x02 0x59439000 0x03 0x65da3800 0x04 0x6b931000 0x05 0x74bad000 0x06 0x7829b800>;
@@ -12981,7 +12981,7 @@
 			regulator-max-microvolt = <0x06>;
 			regulator-min-microvolt = <0x01>;
 			regulator-name = "apc_corner";
-			vdd-apc-supply = <0x127>;
+			vdd-apc-supply = <0x123>;
 		};
 
 		replicator@6026000 {
@@ -12990,7 +12990,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-replicator";
-			phandle = <0x2c2>;
+			phandle = <0x2c1>;
 			reg = <0x6026000 0x1000>;
 			reg-names = "replicator-base";
 
@@ -13001,8 +13001,8 @@
 				port@0 {
 
 					endpoint {
-						phandle = <0x190>;
-						remote-endpoint = <0x193>;
+						phandle = <0x18c>;
+						remote-endpoint = <0x18f>;
 					};
 				};
 
@@ -13010,8 +13010,8 @@
 					reg = <0x00>;
 
 					endpoint {
-						phandle = <0x191>;
-						remote-endpoint = <0x194>;
+						phandle = <0x18d>;
+						remote-endpoint = <0x190>;
 						slave-mode;
 					};
 				};
@@ -13032,8 +13032,8 @@
 			port {
 
 				endpoint {
-					phandle = <0x19c>;
-					remote-endpoint = <0x1ba>;
+					phandle = <0x198>;
+					remote-endpoint = <0x1b6>;
 				};
 			};
 		};
@@ -13044,7 +13044,7 @@
 			compatible = "qcom,ice";
 			interrupt-names = "sdcc_ice_nonsec_level_irq\0sdcc_ice_sec_level_irq";
 			interrupts = <0x00 0x138 0x00 0x00 0x139 0x00>;
-			phandle = <0x102>;
+			phandle = <0xfd>;
 			qcom,bus-vector-names = "MIN\0MAX";
 			qcom,enable-ice-clk;
 			qcom,instance-type = "sdcc";
@@ -13062,9 +13062,9 @@
 			compatible = "qcom,sdhci-msm";
 			interrupt-names = "hc_irq\0pwr_irq";
 			interrupts = <0x00 0x7b 0x00 0x00 0x8a 0x00>;
-			phandle = <0x28c>;
-			pinctrl-0 = <0x103 0x104 0x105 0x106>;
-			pinctrl-1 = <0x107 0x108 0x109 0x10a>;
+			phandle = <0x28b>;
+			pinctrl-0 = <0xff 0x100 0x101 0x102>;
+			pinctrl-1 = <0x103 0x104 0x105 0x106>;
 			pinctrl-names = "active\0sleep";
 			qcom,bus-bw-vectors-bps = <0x00 0x61a80 0x1312d00 0x17d7840 0x2faf080 0x5f5e100 0xbebc200 0x17d78400 0xffffffff>;
 			qcom,bus-speed-mode = "HS400_1p8v\0HS200_1p8v\0DDR_1p8v";
@@ -13093,10 +13093,10 @@
 			qcom,vdd-voltage-level = <0x2c4020 0x2c4020>;
 			reg = <0x7824900 0x500 0x7824000 0x800 0x7824e00 0x200>;
 			reg-names = "hc_mem\0core_mem\0cmdq_mem";
-			sdhc-msm-crypto = <0x102>;
+			sdhc-msm-crypto = <0xfd>;
 			status = "ok";
 			vdd-io-supply = <0x7a>;
-			vdd-supply = <0xea>;
+			vdd-supply = <0xfe>;
 		};
 
 		sdhci@7864900 {
@@ -13106,9 +13106,9 @@
 			compatible = "qcom,sdhci-msm";
 			interrupt-names = "hc_irq\0pwr_irq";
 			interrupts = <0x00 0x7d 0x00 0x00 0xdd 0x00>;
-			phandle = <0x28d>;
-			pinctrl-0 = <0x10d 0x10e 0x10f 0x110>;
-			pinctrl-1 = <0x111 0x112 0x113>;
+			phandle = <0x28c>;
+			pinctrl-0 = <0x109 0x10a 0x10b 0x10c>;
+			pinctrl-1 = <0x10d 0x10e 0x10f>;
 			pinctrl-names = "active\0sleep";
 			qcom,bus-bw-vectors-bps = <0x00 0x61a80 0x1312d00 0x17d7840 0x2faf080 0x5f5e100 0xbebc200 0xffffffff>;
 			qcom,bus-speed-mode = "SDR12\0SDR25\0SDR50\0DDR50\0SDR104";
@@ -13132,8 +13132,8 @@
 			reg = <0x7864900 0x500 0x7864000 0x800>;
 			reg-names = "hc_mem\0core_mem";
 			status = "ok";
-			vdd-io-supply = <0x10c>;
-			vdd-supply = <0x10b>;
+			vdd-io-supply = <0x108>;
+			vdd-supply = <0x107>;
 		};
 
 		serial@78b0000 {
@@ -13219,28 +13219,28 @@
 
 					wsa881x@20170211 {
 						compatible = "qcom,wsa881x";
-						phandle = <0x16d>;
+						phandle = <0x169>;
 						qcom,spkr-sd-n-gpio = <0x86 0x60 0x00>;
 						reg = <0x00 0x20170211>;
 					};
 
 					wsa881x@20170212 {
 						compatible = "qcom,wsa881x";
-						phandle = <0x16e>;
+						phandle = <0x16a>;
 						qcom,spkr-sd-n-gpio = <0x86 0x60 0x00>;
 						reg = <0x00 0x20170212>;
 					};
 
 					wsa881x@21170213 {
 						compatible = "qcom,wsa881x";
-						phandle = <0x16f>;
+						phandle = <0x16b>;
 						qcom,spkr-sd-n-gpio = <0x86 0x60 0x00>;
 						reg = <0x00 0x21170213>;
 					};
 
 					wsa881x@21170214 {
 						compatible = "qcom,wsa881x";
-						phandle = <0x170>;
+						phandle = <0x16c>;
 						qcom,spkr-sd-n-gpio = <0x86 0x60 0x00>;
 						reg = <0x00 0x21170214>;
 					};
@@ -13256,14 +13256,14 @@
 		};
 
 		sound {
-			asoc-codec = <0x151 0x152 0x153>;
+			asoc-codec = <0x14d 0x14e 0x14f>;
 			asoc-codec-names = "msm-stub-codec.1\0msm-dig-codec\0analog-codec";
-			asoc-cpu = <0x136 0x137 0x138 0x139 0x13a 0x13b 0x13c 0x13d 0x13e 0x13f 0x140 0x141 0x142 0x143 0x144 0x145 0x146 0x147 0x148 0x149 0x14a 0x14b 0x14c 0x14d 0x14e 0x14f 0x150>;
+			asoc-cpu = <0x132 0x133 0x134 0x135 0x136 0x137 0x138 0x139 0x13a 0x13b 0x13c 0x13d 0x13e 0x13f 0x140 0x141 0x142 0x143 0x144 0x145 0x146 0x147 0x148 0x149 0x14a 0x14b 0x14c>;
 			asoc-cpu-names = "msm-dai-q6-auxpcm.1\0msm-dai-q6-mi2s.0\0msm-dai-q6-mi2s.1\0msm-dai-q6-mi2s.2\0msm-dai-q6-mi2s.3\0msm-dai-q6-mi2s.4\0msm-dai-q6-mi2s.6\0msm-dai-q6-dev.16384\0msmdai-q6-dev.16385\0msm-dai-q6-dev.16386\0msm-dai-q6-dev.16387\0msm-dai-q6-dev.16390\0msm-dai-q6-dev.16391\0msm-dai-q6-dev.16392\0msm-dai-q6-dev.16393\0msm-dai-q6-dev.12288\0msm-dai-q6-dev.12289\0msm-dai-q6-dev.12292\0msm-dai-q6-dev.12293\0msm-dai-q6-dev.224\0msm-dai-q6-dev.225\0msm-dai-q6-dev.241\0msm-dai-q6-dev.240\0msm-dai-q6-dev.32771\0msm-dai-q6-dev.32772\0msm-dai-q6-dev.32773\0msm-dai-q6-dev.32770";
-			asoc-platform = <0x12a 0x12b 0x12c 0x12d 0x12e 0x12f 0x130 0x131 0x132 0x133 0x134 0x135>;
+			asoc-platform = <0x126 0x127 0x128 0x129 0x12a 0x12b 0x12c 0x12d 0x12e 0x12f 0x130 0x131>;
 			asoc-platform-names = "msm-pcm-dsp.0\0msm-pcm-dsp.1\0msm-pcm-dsp.2\0msm-voip-dsp\0msm-pcm-voice\0msm-pcm-loopback\0msm-compress-dsp\0msm-pcm-hostless\0msm-pcm-afe\0msm-lsm-client\0msm-pcm-routing\0msm-pcm-dsp-noirq";
 			compatible = "qcom,msm8952-audio-codec";
-			phandle = <0x2b1>;
+			phandle = <0x2b0>;
 			qcom,audio-routing = "RX_BIAS\0MCLK\0SPK_RX_BIAS\0MCLK\0INT_LDO_H\0MCLK\0RX_I2S_CLK\0MCLK\0TX_I2S_CLK\0MCLK\0MIC BIAS External\0Handset Mic\0MIC BIAS Internal2\0Headset Mic\0MIC BIAS External\0Secondary Mic\0AMIC1\0MIC BIAS External\0AMIC2\0MIC BIAS Internal2\0AMIC3\0MIC BIAS External\0ADC1_IN\0ADC1_OUT\0ADC2_IN\0ADC2_OUT\0ADC3_IN\0ADC3_OUT\0PDM_IN_RX1\0PDM_OUT_RX1\0PDM_IN_RX2\0PDM_OUT_RX2\0PDM_IN_RX3\0PDM_OUT_RX3";
 			qcom,cdc-us-euro-gpios = <0x86 0x3f 0x00>;
 			qcom,model = "sdm439-snd-card-mtp";
@@ -13273,7 +13273,7 @@
 			qcom,msm-mbhc-hphl-swh = <0x01>;
 			qcom,msm-mclk-freq = <0x927c00>;
 			qcom,msm-micbias1-ext-cap;
-			qcom,pri-mi2s-gpios = <0x129>;
+			qcom,pri-mi2s-gpios = <0x125>;
 			qcom,wsa-disabled;
 			reg = <0xc051000 0x04 0xc051004 0x04 0xc055000 0x04 0xc052000 0x04>;
 			reg-names = "csr_gp_io_mux_mic_ctl\0csr_gp_io_mux_spkr_ctl\0csr_gp_io_lpaif_pri_pcm_pri_mode_muxsel\0csr_gp_io_mux_quin_ctl";
@@ -13281,24 +13281,24 @@
 		};
 
 		sound-9335 {
-			asoc-codec = <0x151 0x16c>;
+			asoc-codec = <0x14d 0x168>;
 			asoc-codec-names = "msm-stub-codec.1\0msm-hdmi-dba-codec-rx";
-			asoc-cpu = <0x136 0x139 0x13a 0x13c 0x13d 0x13e 0x13f 0x140 0x167 0x168 0x141 0x142 0x143 0x144 0x169 0x149 0x14a 0x14b 0x14c 0x14d 0x14e 0x14f 0x150 0x16a 0x145 0x146 0x147 0x148 0x16b>;
+			asoc-cpu = <0x132 0x135 0x136 0x138 0x139 0x13a 0x13b 0x13c 0x163 0x164 0x13d 0x13e 0x13f 0x140 0x165 0x145 0x146 0x147 0x148 0x149 0x14a 0x14b 0x14c 0x166 0x141 0x142 0x143 0x144 0x167>;
 			asoc-cpu-names = "msm-dai-q6-auxpcm.1\0msm-dai-q6-mi2s.2\0msm-dai-q6-mi2s.3\0msm-dai-q6-mi2s.5\0msm-dai-q6-dev.16384\0msm-dai-q6-dev.16385\0msm-dai-q6-dev.16386\0msm-dai-q6-dev.16387\0msm-dai-q6-dev.16388\0msm-dai-q6-dev.16389\0msm-dai-q6-dev.16390\0msm-dai-q6-dev.16391\0msm-dai-q6-dev.16392\0msm-dai-q6-dev.16393\0msm-dai-q6-dev.16395\0msm-dai-q6-dev.224\0msm-dai-q6-dev.225\0msm-dai-q6-dev.241\0msm-dai-q6-dev.240\0msm-dai-q6-dev.32771\0msm-dai-q6-dev.32772\0msm-dai-q6-dev.32773\0msm-dai-q6-dev.32770\0msm-dai-q6-dev.16394\0msm-dai-q6-dev.12288\0msm-dai-q6-dev.12289\0msm-dai-q6-dev.12292\0msm-dai-q6-dev.12293\0msm-dai-q6-dev.16396";
-			asoc-platform = <0x12a 0x12b 0x12c 0x12d 0x12e 0x12f 0x130 0x131 0x132 0x133 0x134 0x166 0x135>;
+			asoc-platform = <0x126 0x127 0x128 0x129 0x12a 0x12b 0x12c 0x12d 0x12e 0x12f 0x130 0x162 0x131>;
 			asoc-platform-names = "msm-pcm-dsp.0\0msm-pcm-dsp.1\0msm-pcm-dsp.2\0msm-voip-dsp\0msm-pcm-voice\0msm-pcm-loopback\0msm-compress-dsp\0msm-pcm-hostless\0msm-pcm-afe\0msm-lsm-client\0msm-pcm-routing\0msm-cpe-lsm\0msm-pcm-dsp-noirq";
 			compatible = "qcom,msm8952-audio-slim-codec";
-			phandle = <0x2b2>;
+			phandle = <0x2b1>;
 			qcom,audio-routing = "AIF4 VI\0MCLK\0AIF4 VI\0MICBIAS_REGULATOR\0RX_BIAS\0MCLK\0MADINPUT\0MCLK\0AIF4 MAD\0MICBIAS_REGULATOR\0AMIC2\0MIC BIAS2\0MIC BIAS2\0Headset Mic\0AMIC3\0MIC BIAS2\0MIC BIAS2\0ANCRight Headset Mic\0AMIC4\0MIC BIAS2\0MIC BIAS2\0ANCLeft Headset Mic\0AMIC5\0MIC BIAS3\0MIC BIAS3\0Handset Mic\0AMIC6\0MIC BIAS4\0MIC BIAS4\0Analog Mic6\0DMIC0\0MIC BIAS1\0MIC BIAS1\0Digital Mic0\0DMIC1\0MIC BIAS1\0MIC BIAS1\0Digital Mic1\0DMIC2\0MIC BIAS3\0MIC BIAS3\0Digital Mic2\0DMIC3\0MIC BIAS3\0MIC BIAS3\0Digital Mic3\0DMIC4\0MIC BIAS4\0MIC BIAS4\0Digital Mic4\0DMIC5\0MIC BIAS4\0MIC BIAS4\0Digital Mic5\0MIC BIAS1\0MICBIAS_REGULATOR\0MIC BIAS2\0MICBIAS_REGULATOR\0MIC BIAS3\0MICBIAS_REGULATOR\0MIC BIAS4\0MICBIAS_REGULATOR\0SpkrLeft IN\0SPK1 OUT\0SpkrRight IN\0SPK2 OUT";
-			qcom,cdc-us-eu-gpios = <0x164>;
+			qcom,cdc-us-eu-gpios = <0x160>;
 			qcom,cdc-us-euro-gpios = <0x86 0x3f 0x00>;
 			qcom,model = "msm8952-tasha-snd-card";
 			qcom,msm-mbhc-gnd-swh = <0x00>;
 			qcom,msm-mbhc-hphl-swh = <0x00>;
-			qcom,quin-mi2s-gpios = <0x165>;
+			qcom,quin-mi2s-gpios = <0x161>;
 			qcom,tasha-mclk-clk-freq = <0x927c00>;
 			qcom,wsa-aux-dev-prefix = "SpkrLeft\0SpkrRight\0SpkrLeft\0SpkrRight";
-			qcom,wsa-devs = <0x16d 0x16e 0x16f 0x170>;
+			qcom,wsa-devs = <0x169 0x16a 0x16b 0x16c>;
 			qcom,wsa-max-devs = <0x02>;
 			reg = <0xc051000 0x04 0xc051004 0x04 0xc055000 0x04 0xc052000 0x04>;
 			reg-names = "csr_gp_io_mux_mic_ctl\0csr_gp_io_mux_spkr_ctl\0csr_gp_io_lpaif_pri_pcm_pri_mode_muxsel\0csr_gp_io_mux_quin_ctl";
@@ -13424,9 +13424,9 @@
 			compatible = "qcom,spi-qup-v2";
 			interrupt-names = "spi_irq\0spi_bam_irq";
 			interrupts = <0x00 0x12c 0x00 0x00 0xef 0x00>;
-			phandle = <0x259>;
-			pinctrl-0 = <0xe6 0xe7>;
-			pinctrl-1 = <0xe8 0xe9>;
+			phandle = <0x2f1>;
+			pinctrl-0 = <0x1bd 0x1be>;
+			pinctrl-1 = <0x1bf 0x1c0>;
 			pinctrl-names = "spi_default\0spi_sleep";
 			qcom,bam-consumer-pipe-index = <0x06>;
 			qcom,bam-producer-pipe-index = <0x07>;
@@ -13445,7 +13445,7 @@
 				reg = <0x00>;
 				spi-max-frequency = <0x124f800>;
 				status = "ok";
-				vdd-supply = <0xea>;
+				vdd-supply = <0xfe>;
 			};
 		};
 
@@ -13455,15 +13455,15 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-stm";
-			phandle = <0x2d1>;
+			phandle = <0x2d0>;
 			reg = <0x6002000 0x1000 0x9280000 0x180000>;
 			reg-names = "stm-base\0stm-stimulus-base";
 
 			port {
 
 				endpoint {
-					phandle = <0x196>;
-					remote-endpoint = <0x1b8>;
+					phandle = <0x192>;
+					remote-endpoint = <0x1b4>;
 				};
 			};
 		};
@@ -14849,10 +14849,10 @@
 			clock-names = "apb_pclk";
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
-			coresight-csr = <0x18d>;
-			coresight-ctis = <0x18e 0x18f>;
+			coresight-csr = <0x189>;
+			coresight-ctis = <0x18a 0x18b>;
 			coresight-name = "coresight-tmc-etf";
-			phandle = <0x2c1>;
+			phandle = <0x2c0>;
 			qcom,force-reg-dump;
 			reg = <0x6027000 0x1000>;
 			reg-names = "tmc-base";
@@ -14864,8 +14864,8 @@
 				port@0 {
 
 					endpoint {
-						phandle = <0x194>;
-						remote-endpoint = <0x191>;
+						phandle = <0x190>;
+						remote-endpoint = <0x18d>;
 					};
 				};
 
@@ -14873,8 +14873,8 @@
 					reg = <0x00>;
 
 					endpoint {
-						phandle = <0x195>;
-						remote-endpoint = <0x192>;
+						phandle = <0x191>;
+						remote-endpoint = <0x18e>;
 						slave-mode;
 					};
 				};
@@ -14888,12 +14888,12 @@
 			clock-names = "apb_pclk";
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
-			coresight-csr = <0x18d>;
-			coresight-ctis = <0x18e 0x18f>;
+			coresight-csr = <0x189>;
+			coresight-ctis = <0x18a 0x18b>;
 			coresight-name = "coresight-tmc-etr";
 			interrupt-names = "byte-cntr-irq";
 			interrupts = <0x00 0xa6 0x00>;
-			phandle = <0x2c0>;
+			phandle = <0x2bf>;
 			qcom,force-reg-dump;
 			reg = <0x6028000 0x1000 0x6044000 0x15000>;
 			reg-names = "tmc-base\0bam-base";
@@ -14901,8 +14901,8 @@
 			port {
 
 				endpoint {
-					phandle = <0x193>;
-					remote-endpoint = <0x190>;
+					phandle = <0x18f>;
+					remote-endpoint = <0x18c>;
 					slave-mode;
 				};
 			};
@@ -14914,7 +14914,7 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-tpda";
-			phandle = <0x2ee>;
+			phandle = <0x2ed>;
 			qcom,cmb-elem-size = <0x00 0x20>;
 			qcom,tpda-atid = <0x40>;
 			reg = <0x6003000 0x1000>;
@@ -14927,8 +14927,8 @@
 				port@0 {
 
 					endpoint {
-						phandle = <0x197>;
-						remote-endpoint = <0x1be>;
+						phandle = <0x193>;
+						remote-endpoint = <0x1ba>;
 					};
 				};
 
@@ -14936,8 +14936,8 @@
 					reg = <0x00>;
 
 					endpoint {
-						phandle = <0x1c0>;
-						remote-endpoint = <0x1bf>;
+						phandle = <0x1bc>;
+						remote-endpoint = <0x1bb>;
 						slave-mode;
 					};
 				};
@@ -14950,15 +14950,15 @@
 			clocks = <0x25 0x1492202a 0x25 0xdd121669>;
 			compatible = "arm,primecell";
 			coresight-name = "coresight-tpdm-dcc";
-			phandle = <0x2ef>;
+			phandle = <0x2ee>;
 			reg = <0x6110000 0x1000>;
 			reg-names = "tpdm-base";
 
 			port {
 
 				endpoint {
-					phandle = <0x1bf>;
-					remote-endpoint = <0x1c0>;
+					phandle = <0x1bb>;
+					remote-endpoint = <0x1bc>;
 				};
 			};
 		};
@@ -14975,7 +14975,7 @@
 
 		tz-log@08600720 {
 			compatible = "qcom,tz-log";
-			phandle = <0x28b>;
+			phandle = <0x28a>;
 			reg = "\b`\a \0\0 ";
 		};
 
@@ -14988,11 +14988,11 @@
 			interrupt-map = <0x00 0x8a 0x00 0x132 0x00 0x01 0x8a 0x00 0xef 0x00 0x02 0x86 0x11 0x00>;
 			interrupt-map-mask = <0xffffffff>;
 			interrupt-names = "core_irq\0bam_irq\0wakeup_irq";
-			interrupt-parent = <0xee>;
+			interrupt-parent = <0xe9>;
 			interrupts = <0x00 0x01 0x02>;
-			phandle = <0xee>;
-			pinctrl-0 = <0xef>;
-			pinctrl-1 = <0xf0>;
+			phandle = <0xe9>;
+			pinctrl-0 = <0xea>;
+			pinctrl-1 = <0xeb>;
 			pinctrl-names = "sleep\0default";
 			qcom,bam-rx-ep-pipe-index = <0x01>;
 			qcom,bam-tx-ep-pipe-index = <0x00>;
@@ -15011,7 +15011,7 @@
 		usb@78db000 {
 			#address-cells = <0x01>;
 			#size-cells = <0x01>;
-			HSUSB_1p8-supply = <0xf2>;
+			HSUSB_1p8-supply = <0xed>;
 			HSUSB_3p3-supply = <0xbd>;
 			clock-names = "iface_clk\0core_clk\0sleep_clk\0bimc_clk\0snoc_clk\0pcnoc_clk\0phy_reset_clk\0phy_por_clk\0phy_csr_clk\0xo";
 			clocks = <0x25 0x72ce8032 0x25 0xa11972e5 0x25 0x6caa736f 0x25 0xea410834 0x25 0x34b7821b 0x25 0x11d6a74e 0x25 0x996884d5 0x25 0x47179d 0x25 0xe13808fd 0x25 0x79bca5cc>;
@@ -15020,7 +15020,7 @@
 			hsusb_vdd_dig-supply = <0x79>;
 			interrupt-names = "core_irq\0async_irq";
 			interrupts = <0x00 0x86 0x00 0x00 0x8c 0x00>;
-			phandle = <0xfc>;
+			phandle = <0xf7>;
 			qcom,axi-prefetch-enable;
 			qcom,boost-sysclk-with-streaming;
 			qcom,bus-clk-rate = <0x2ca1c800 0xbebc200 0x5f5e100>;
@@ -15042,7 +15042,7 @@
 			reg-names = "core\0phy_csr";
 			reset-names = "core_reset\0phy_reset\0phy_por_reset";
 			resets = <0x25 0x02 0x25 0x04 0x25 0x03>;
-			vbus_otg-supply = <0xf3>;
+			vbus_otg-supply = <0xee>;
 
 			qcom,usbbam@78c4000 {
 				compatible = "qcom,usb-bam-msm";
@@ -15118,7 +15118,7 @@
 			interrupt-controller;
 			interrupt-parent = <0x86>;
 			phandle = <0xb9>;
-			pinctrl-0 = <0x171>;
+			pinctrl-0 = <0x16d>;
 			pinctrl-names = "default";
 			qcom,gpio-connect = <0x86 0x49 0x00>;
 			status = "disabled";
@@ -15132,8 +15132,8 @@
 			port {
 
 				endpoint {
-					phandle = <0x1a2>;
-					remote-endpoint = <0x1b9>;
+					phandle = <0x19e>;
+					remote-endpoint = <0x1b5>;
 				};
 			};
 		};
@@ -15141,24 +15141,24 @@
 		wsa881x_analog_clk_pctrl {
 			compatible = "qcom,msm-cdc-pinctrl";
 			phandle = <0xc9>;
-			pinctrl-0 = <0x160>;
-			pinctrl-1 = <0x161>;
+			pinctrl-0 = <0x15c>;
+			pinctrl-1 = <0x15d>;
 			pinctrl-names = "aud_active\0aud_sleep";
 		};
 
 		wsa881x_analog_reset_pctrl {
 			compatible = "qcom,msm-cdc-pinctrl";
 			phandle = <0xca>;
-			pinctrl-0 = <0x162>;
-			pinctrl-1 = <0x163>;
+			pinctrl-0 = <0x15e>;
+			pinctrl-1 = <0x15f>;
 			pinctrl-names = "aud_active\0aud_sleep";
 		};
 
 		wsa881x_analog_vi_pctrl {
 			compatible = "qcom,msm-cdc-pinctrl";
 			phandle = <0xc8>;
-			pinctrl-0 = <0x15e>;
-			pinctrl-1 = <0x15f>;
+			pinctrl-0 = <0x15a>;
+			pinctrl-1 = <0x15b>;
 			pinctrl-names = "aud_active\0aud_sleep";
 		};
 	};
