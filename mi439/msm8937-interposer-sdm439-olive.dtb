@@ -3932,7 +3932,7 @@
 			};
 
 			cam_sensor_aux_reset {
-				phandle = <0x1e6>;
+				phandle = <0x1f4>;
 
 				config {
 					bias-disable;
@@ -3947,7 +3947,7 @@
 			};
 
 			cam_sensor_aux_reset_sleep {
-				phandle = <0x1e7>;
+				phandle = <0x1f5>;
 
 				config {
 					bias-disable;
@@ -3962,7 +3962,7 @@
 			};
 
 			cam_sensor_front1_default {
-				phandle = <0x1f4>;
+				phandle = <0x1ee>;
 
 				config {
 					bias-disable;
@@ -3977,7 +3977,7 @@
 			};
 
 			cam_sensor_front1_sleep {
-				phandle = <0x1f5>;
+				phandle = <0x1ef>;
 
 				config {
 					bias-disable;
@@ -3992,7 +3992,7 @@
 			};
 
 			cam_sensor_front_default {
-				phandle = <0x1f0>;
+				phandle = <0x1ea>;
 
 				config {
 					bias-disable;
@@ -4007,7 +4007,7 @@
 			};
 
 			cam_sensor_front_sleep {
-				phandle = <0x1f1>;
+				phandle = <0x1eb>;
 
 				config {
 					bias-disable;
@@ -4022,7 +4022,7 @@
 			};
 
 			cam_sensor_mclk0_default {
-				phandle = <0x1e2>;
+				phandle = <0x1de>;
 
 				config {
 					bias-disable;
@@ -4037,7 +4037,7 @@
 			};
 
 			cam_sensor_mclk0_sleep {
-				phandle = <0x1e3>;
+				phandle = <0x1df>;
 
 				config {
 					bias-pull-down;
@@ -4052,7 +4052,7 @@
 			};
 
 			cam_sensor_mclk1_default {
-				phandle = <0x1ee>;
+				phandle = <0x1e8>;
 
 				config {
 					bias-disable;
@@ -4067,7 +4067,7 @@
 			};
 
 			cam_sensor_mclk1_sleep {
-				phandle = <0x1ef>;
+				phandle = <0x1e9>;
 
 				config {
 					bias-pull-down;
@@ -4082,7 +4082,7 @@
 			};
 
 			cam_sensor_mclk2_default {
-				phandle = <0x1f2>;
+				phandle = <0x1ec>;
 
 				config {
 					bias-disable;
@@ -4097,7 +4097,7 @@
 			};
 
 			cam_sensor_mclk2_sleep {
-				phandle = <0x1f3>;
+				phandle = <0x1ed>;
 
 				config {
 					bias-pull-down;
@@ -4112,7 +4112,7 @@
 			};
 
 			cam_sensor_rear_reset {
-				phandle = <0x1e4>;
+				phandle = <0x1e0>;
 
 				config {
 					bias-disable;
@@ -4127,7 +4127,7 @@
 			};
 
 			cam_sensor_rear_reset_sleep {
-				phandle = <0x1e5>;
+				phandle = <0x1e1>;
 
 				config {
 					bias-disable;
@@ -4142,7 +4142,7 @@
 			};
 
 			cam_sensor_rear_standby {
-				phandle = <0x1e8>;
+				phandle = <0x1e2>;
 
 				config {
 					bias-disable;
@@ -4157,7 +4157,7 @@
 			};
 
 			cam_sensor_rear_standby_sleep {
-				phandle = <0x1e9>;
+				phandle = <0x1e3>;
 
 				config {
 					bias-disable;
@@ -4172,7 +4172,7 @@
 			};
 
 			cam_sensor_rear_vana {
-				phandle = <0x1ec>;
+				phandle = <0x1e6>;
 
 				config {
 					bias-disable;
@@ -4187,7 +4187,7 @@
 			};
 
 			cam_sensor_rear_vana_sleep {
-				phandle = <0x1ed>;
+				phandle = <0x1e7>;
 
 				config {
 					bias-disable;
@@ -4202,7 +4202,7 @@
 			};
 
 			cam_sensor_rear_vdig {
-				phandle = <0x1ea>;
+				phandle = <0x1e4>;
 
 				config {
 					bias-disable;
@@ -4217,7 +4217,7 @@
 			};
 
 			cam_sensor_rear_vdig_sleep {
-				phandle = <0x1eb>;
+				phandle = <0x1e5>;
 
 				config {
 					bias-disable;
@@ -4463,7 +4463,7 @@
 			fm_pin {
 
 				gpio_off {
-					phandle = <0x1d3>;
+					phandle = <0x1cf>;
 
 					config {
 						bias-disable;
@@ -4478,7 +4478,7 @@
 				};
 
 				gpio_on {
-					phandle = <0x1d2>;
+					phandle = <0x1ce>;
 
 					config {
 						bias-disable;
@@ -4544,7 +4544,7 @@
 			};
 
 			goodix_irq_active {
-				phandle = <0x19e>;
+				phandle = <0x1f3>;
 
 				config {
 					bias-disable = <0x00>;
@@ -4559,7 +4559,7 @@
 			};
 
 			goodix_reset_active {
-				phandle = <0x19d>;
+				phandle = <0x1f2>;
 
 				config {
 					bias-disable = <0x00>;
@@ -4575,7 +4575,7 @@
 			};
 
 			goodix_reset_reset {
-				phandle = <0x19c>;
+				phandle = <0x1f1>;
 
 				config {
 					bias-disable = <0x00>;
@@ -4591,7 +4591,7 @@
 			};
 
 			goodix_spi_active {
-				phandle = <0x19b>;
+				phandle = <0x1f0>;
 
 				config {
 					bias-disable = <0x00>;
@@ -4802,10 +4802,10 @@
 			};
 
 			pmx_adv7533_int {
-				phandle = <0x1a0>;
+				phandle = <0x19c>;
 
 				adv7533_int_active {
-					phandle = <0x1a1>;
+					phandle = <0x19d>;
 
 					config {
 						bias-disable;
@@ -4820,7 +4820,7 @@
 				};
 
 				adv7533_int_suspend {
-					phandle = <0x1a2>;
+					phandle = <0x19e>;
 
 					config {
 						bias-disable;
@@ -4836,10 +4836,10 @@
 			};
 
 			pmx_mdss {
-				phandle = <0x1a3>;
+				phandle = <0x19f>;
 
 				mdss_dsi_active {
-					phandle = <0x1a4>;
+					phandle = <0x1a0>;
 
 					config {
 						bias-disable = <0x00>;
@@ -4855,7 +4855,7 @@
 				};
 
 				mdss_dsi_suspend {
-					phandle = <0x1a5>;
+					phandle = <0x1a1>;
 
 					config {
 						bias-pull-up;
@@ -4874,7 +4874,7 @@
 			pmx_mdss_te {
 
 				mdss_te_active {
-					phandle = <0x1a6>;
+					phandle = <0x1a2>;
 
 					config {
 						bias-pull-down;
@@ -4889,7 +4889,7 @@
 				};
 
 				mdss_te_suspend {
-					phandle = <0x1a7>;
+					phandle = <0x1a3>;
 
 					config {
 						bias-pull-down;
@@ -4907,7 +4907,7 @@
 			pmx_qdsd_clk {
 
 				clk_sdcard {
-					phandle = <0x1b0>;
+					phandle = <0x1ac>;
 
 					config {
 						bias-disable;
@@ -4917,7 +4917,7 @@
 				};
 
 				clk_spmi {
-					phandle = <0x1b3>;
+					phandle = <0x1af>;
 
 					config {
 						bias-pull-down;
@@ -4927,7 +4927,7 @@
 				};
 
 				clk_swdtrc {
-					phandle = <0x1b2>;
+					phandle = <0x1ae>;
 
 					config {
 						bias-pull-down;
@@ -4937,7 +4937,7 @@
 				};
 
 				clk_trace {
-					phandle = <0x1b1>;
+					phandle = <0x1ad>;
 
 					config {
 						bias-pull-down;
@@ -4950,7 +4950,7 @@
 			pmx_qdsd_cmd {
 
 				cmd_jtag {
-					phandle = <0x1b8>;
+					phandle = <0x1b4>;
 
 					config {
 						bias-disable;
@@ -4960,7 +4960,7 @@
 				};
 
 				cmd_sdcard {
-					phandle = <0x1b4>;
+					phandle = <0x1b0>;
 
 					config {
 						bias-pull-down;
@@ -4970,7 +4970,7 @@
 				};
 
 				cmd_spmi {
-					phandle = <0x1b9>;
+					phandle = <0x1b5>;
 
 					config {
 						bias-pull-down;
@@ -4980,7 +4980,7 @@
 				};
 
 				cmd_swdtrc {
-					phandle = <0x1b7>;
+					phandle = <0x1b3>;
 
 					config {
 						bias-pull-up;
@@ -4990,7 +4990,7 @@
 				};
 
 				cmd_trace {
-					phandle = <0x1b5>;
+					phandle = <0x1b1>;
 
 					config {
 						bias-pull-down;
@@ -5000,7 +5000,7 @@
 				};
 
 				cmd_uart {
-					phandle = <0x1b6>;
+					phandle = <0x1b2>;
 
 					config {
 						bias-pull-up;
@@ -5013,7 +5013,7 @@
 			pmx_qdsd_data0 {
 
 				data0_jtag {
-					phandle = <0x1be>;
+					phandle = <0x1ba>;
 
 					config {
 						bias-pull-up;
@@ -5023,7 +5023,7 @@
 				};
 
 				data0_sdcard {
-					phandle = <0x1ba>;
+					phandle = <0x1b6>;
 
 					config {
 						bias-pull-down;
@@ -5033,7 +5033,7 @@
 				};
 
 				data0_spmi {
-					phandle = <0x1bf>;
+					phandle = <0x1bb>;
 
 					config {
 						bias-pull-down;
@@ -5043,7 +5043,7 @@
 				};
 
 				data0_swdtrc {
-					phandle = <0x1bd>;
+					phandle = <0x1b9>;
 
 					config {
 						bias-pull-down;
@@ -5053,7 +5053,7 @@
 				};
 
 				data0_trace {
-					phandle = <0x1bb>;
+					phandle = <0x1b7>;
 
 					config {
 						bias-pull-down;
@@ -5063,7 +5063,7 @@
 				};
 
 				data0_uart {
-					phandle = <0x1bc>;
+					phandle = <0x1b8>;
 
 					config {
 						bias-pull-down;
@@ -5076,7 +5076,7 @@
 			pmx_qdsd_data1 {
 
 				data1_jtag {
-					phandle = <0x1c4>;
+					phandle = <0x1c0>;
 
 					config {
 						bias-pull-down;
@@ -5086,7 +5086,7 @@
 				};
 
 				data1_sdcard {
-					phandle = <0x1c0>;
+					phandle = <0x1bc>;
 
 					config {
 						bias-pull-down;
@@ -5096,7 +5096,7 @@
 				};
 
 				data1_swdtrc {
-					phandle = <0x1c3>;
+					phandle = <0x1bf>;
 
 					config {
 						bias-pull-down;
@@ -5106,7 +5106,7 @@
 				};
 
 				data1_trace {
-					phandle = <0x1c1>;
+					phandle = <0x1bd>;
 
 					config {
 						bias-pull-down;
@@ -5116,7 +5116,7 @@
 				};
 
 				data1_uart {
-					phandle = <0x1c2>;
+					phandle = <0x1be>;
 
 					config {
 						bias-pull-down;
@@ -5129,7 +5129,7 @@
 			pmx_qdsd_data2 {
 
 				data2_jtag {
-					phandle = <0x1c9>;
+					phandle = <0x1c5>;
 
 					config {
 						bias-pull-up;
@@ -5139,7 +5139,7 @@
 				};
 
 				data2_sdcard {
-					phandle = <0x1c5>;
+					phandle = <0x1c1>;
 
 					config {
 						bias-pull-down;
@@ -5149,7 +5149,7 @@
 				};
 
 				data2_swdtrc {
-					phandle = <0x1c8>;
+					phandle = <0x1c4>;
 
 					config {
 						bias-pull-down;
@@ -5159,7 +5159,7 @@
 				};
 
 				data2_trace {
-					phandle = <0x1c6>;
+					phandle = <0x1c2>;
 
 					config {
 						bias-pull-down;
@@ -5169,7 +5169,7 @@
 				};
 
 				data2_uart {
-					phandle = <0x1c7>;
+					phandle = <0x1c3>;
 
 					config {
 						bias-pull-down;
@@ -5182,7 +5182,7 @@
 			pmx_qdsd_data3 {
 
 				data3_jtag {
-					phandle = <0x1ce>;
+					phandle = <0x1ca>;
 
 					config {
 						bias-pull-up;
@@ -5192,7 +5192,7 @@
 				};
 
 				data3_sdcard {
-					phandle = <0x1ca>;
+					phandle = <0x1c6>;
 
 					config {
 						bias-pull-down;
@@ -5202,26 +5202,6 @@
 				};
 
 				data3_spmi {
-					phandle = <0x1cf>;
-
-					config {
-						bias-pull-down;
-						drive-strength = <0x08>;
-						pins = "qdsd_data3";
-					};
-				};
-
-				data3_swdtrc {
-					phandle = <0x1cd>;
-
-					config {
-						bias-pull-up;
-						drive-strength = <0x02>;
-						pins = "qdsd_data3";
-					};
-				};
-
-				data3_trace {
 					phandle = <0x1cb>;
 
 					config {
@@ -5231,8 +5211,28 @@
 					};
 				};
 
+				data3_swdtrc {
+					phandle = <0x1c9>;
+
+					config {
+						bias-pull-up;
+						drive-strength = <0x02>;
+						pins = "qdsd_data3";
+					};
+				};
+
+				data3_trace {
+					phandle = <0x1c7>;
+
+					config {
+						bias-pull-down;
+						drive-strength = <0x08>;
+						pins = "qdsd_data3";
+					};
+				};
+
 				data3_uart {
-					phandle = <0x1cc>;
+					phandle = <0x1c8>;
 
 					config {
 						bias-pull-up;
@@ -5245,7 +5245,7 @@
 			pmx_sdc1_clk {
 
 				sdc1_clk_off {
-					phandle = <0x1d5>;
+					phandle = <0x1d1>;
 
 					config {
 						bias-disable;
@@ -5255,7 +5255,7 @@
 				};
 
 				sdc1_clk_on {
-					phandle = <0x1d4>;
+					phandle = <0x1d0>;
 
 					config {
 						bias-disable;
@@ -5268,7 +5268,7 @@
 			pmx_sdc1_cmd {
 
 				sdc1_cmd_off {
-					phandle = <0x1d7>;
+					phandle = <0x1d3>;
 
 					config {
 						bias-pull-up;
@@ -5278,7 +5278,7 @@
 				};
 
 				sdc1_cmd_on {
-					phandle = <0x1d6>;
+					phandle = <0x1d2>;
 
 					config {
 						bias-pull-up;
@@ -5291,7 +5291,7 @@
 			pmx_sdc1_data {
 
 				sdc1_data_off {
-					phandle = <0x1d9>;
+					phandle = <0x1d5>;
 
 					config {
 						bias-pull-up;
@@ -5301,7 +5301,7 @@
 				};
 
 				sdc1_data_on {
-					phandle = <0x1d8>;
+					phandle = <0x1d4>;
 
 					config {
 						bias-pull-up;
@@ -5314,7 +5314,7 @@
 			pmx_sdc1_rclk {
 
 				sdc1_rclk_off {
-					phandle = <0x1d1>;
+					phandle = <0x1cd>;
 
 					config {
 						bias-pull-down;
@@ -5323,7 +5323,7 @@
 				};
 
 				sdc1_rclk_on {
-					phandle = <0x1d0>;
+					phandle = <0x1cc>;
 
 					config {
 						bias-pull-down;
@@ -5335,7 +5335,7 @@
 			pmx_sdc2_clk {
 
 				sdc2_clk_off {
-					phandle = <0x1dd>;
+					phandle = <0x1d9>;
 
 					config {
 						bias-disable;
@@ -5345,7 +5345,7 @@
 				};
 
 				sdc2_clk_on {
-					phandle = <0x1dc>;
+					phandle = <0x1d8>;
 
 					config {
 						bias-disable;
@@ -5358,7 +5358,7 @@
 			pmx_sdc2_cmd {
 
 				sdc2_cmd_off {
-					phandle = <0x1df>;
+					phandle = <0x1db>;
 
 					config {
 						bias-pull-up;
@@ -5368,7 +5368,7 @@
 				};
 
 				sdc2_cmd_on {
-					phandle = <0x1de>;
+					phandle = <0x1da>;
 
 					config {
 						bias-pull-up;
@@ -5381,7 +5381,7 @@
 			pmx_sdc2_data {
 
 				sdc2_data_off {
-					phandle = <0x1e1>;
+					phandle = <0x1dd>;
 
 					config {
 						bias-pull-up;
@@ -5391,7 +5391,7 @@
 				};
 
 				sdc2_data_on {
-					phandle = <0x1e0>;
+					phandle = <0x1dc>;
 
 					config {
 						bias-pull-up;
@@ -5404,7 +5404,7 @@
 			pmx_ts_int_active {
 
 				ts_int_active {
-					phandle = <0x1ab>;
+					phandle = <0x1a7>;
 
 					config {
 						bias-pull-up;
@@ -5422,7 +5422,7 @@
 			pmx_ts_int_suspend {
 
 				ts_int_suspend {
-					phandle = <0x1ac>;
+					phandle = <0x1a8>;
 
 					config {
 						bias-pull-down;
@@ -5440,7 +5440,7 @@
 			pmx_ts_release {
 
 				ts_release {
-					phandle = <0x1af>;
+					phandle = <0x1ab>;
 
 					config {
 						bias-pull-down;
@@ -5458,7 +5458,7 @@
 			pmx_ts_reset_active {
 
 				ts_reset_active {
-					phandle = <0x1ad>;
+					phandle = <0x1a9>;
 
 					config {
 						bias-pull-up;
@@ -5476,7 +5476,7 @@
 			pmx_ts_reset_suspend {
 
 				ts_reset_suspend {
-					phandle = <0x1ae>;
+					phandle = <0x1aa>;
 
 					config {
 						bias-pull-down;
@@ -5558,7 +5558,7 @@
 			sdhc2_cd_pin {
 
 				cd_off {
-					phandle = <0x1db>;
+					phandle = <0x1d7>;
 
 					config {
 						bias-disable;
@@ -5573,7 +5573,7 @@
 				};
 
 				cd_on {
-					phandle = <0x1da>;
+					phandle = <0x1d6>;
 
 					config {
 						bias-pull-up;
@@ -5765,7 +5765,7 @@
 			tlmm_gpio_key {
 
 				gpio_key_active {
-					phandle = <0x1a9>;
+					phandle = <0x1a5>;
 
 					config {
 						bias-pull-up;
@@ -5780,7 +5780,7 @@
 				};
 
 				gpio_key_suspend {
-					phandle = <0x1aa>;
+					phandle = <0x1a6>;
 
 					config {
 						bias-pull-up;
@@ -5859,7 +5859,7 @@
 			};
 
 			usbc_int_default {
-				phandle = <0x1a8>;
+				phandle = <0x1a4>;
 
 				config {
 					bias-pull-up;
@@ -5956,7 +5956,7 @@
 			};
 
 			wcnss_pmux_gpio {
-				phandle = <0x19f>;
+				phandle = <0x19b>;
 
 				wcnss_gpio_default {
 					phandle = <0xf6>;
