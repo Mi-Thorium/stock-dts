@@ -1470,7 +1470,7 @@
 			alignment = <0x00 0x400000>;
 			alloc-ranges = <0x00 0x80000000 0x00 0x10000000>;
 			compatible = "shared-dma-pool";
-			phandle = <0x1c9>;
+			phandle = <0x1c5>;
 			reusable;
 			size = <0x00 0x800000>;
 		};
@@ -2606,9 +2606,9 @@
 		audio_ext_clk_native {
 			#clock-cells = <0x01>;
 			compatible = "qcom,audio-ref-clk";
-			phandle = <0x2f3>;
-			pinctrl-0 = <0x1c6>;
-			pinctrl-1 = <0x1c7>;
+			phandle = <0x2f2>;
+			pinctrl-0 = <0x1c2>;
+			pinctrl-1 = <0x1c3>;
 			pinctrl-names = "sleep\0active";
 			qcom,audio-ref-clk-gpio = <0x86 0x42 0x00>;
 			qcom,codec-mclk-clk-freq = <0xac4400>;
@@ -3204,7 +3204,7 @@
 		dsi_pm660_panel_pwr_supply {
 			#address-cells = <0x01>;
 			#size-cells = <0x00>;
-			phandle = <0x2f4>;
+			phandle = <0x2f3>;
 
 			qcom,panel-supply-entry@0 {
 				qcom,supply-disable-load = <0x64>;
@@ -3737,7 +3737,7 @@
 		gpio_keys {
 			compatible = "gpio-keys";
 			input-name = "gpio-keys";
-			pinctrl-0 = <0x1c8>;
+			pinctrl-0 = <0x1c4>;
 			pinctrl-names = "default";
 
 			camera_focus {
@@ -4268,7 +4268,7 @@
 			};
 
 			cam_sensor_aux_reset {
-				phandle = <0x208>;
+				phandle = <0x20f>;
 
 				config {
 					bias-disable;
@@ -4283,7 +4283,7 @@
 			};
 
 			cam_sensor_aux_reset_sleep {
-				phandle = <0x209>;
+				phandle = <0x210>;
 
 				config {
 					bias-disable;
@@ -4697,7 +4697,7 @@
 			cdc_mclk2_pin {
 
 				cdc_mclk2_active {
-					phandle = <0x1c7>;
+					phandle = <0x1c3>;
 
 					config {
 						bias-disable;
@@ -4712,7 +4712,7 @@
 				};
 
 				cdc_mclk2_sleep {
-					phandle = <0x1c6>;
+					phandle = <0x1c2>;
 
 					config {
 						bias-pull-down;
@@ -4880,7 +4880,7 @@
 			};
 
 			goodix_irq_active {
-				phandle = <0x207>;
+				phandle = <0x20e>;
 
 				config {
 					bias-disable = <0x00>;
@@ -4895,7 +4895,7 @@
 			};
 
 			goodix_reset_active {
-				phandle = <0x206>;
+				phandle = <0x20d>;
 
 				config {
 					bias-disable = <0x00>;
@@ -4911,7 +4911,7 @@
 			};
 
 			goodix_reset_reset {
-				phandle = <0x205>;
+				phandle = <0x20c>;
 
 				config {
 					bias-disable = <0x00>;
@@ -4927,7 +4927,7 @@
 			};
 
 			goodix_spi_active {
-				phandle = <0x204>;
+				phandle = <0x20b>;
 
 				config {
 					bias-disable = <0x00>;
@@ -5813,7 +5813,7 @@
 			pmx_ts_reset_release {
 
 				ts_as_reset {
-					phandle = <0x20e>;
+					phandle = <0x208>;
 
 					config {
 						bias-disable;
@@ -5851,7 +5851,7 @@
 			pmx_ts_rst_active {
 
 				ts_rst_active {
-					phandle = <0x20f>;
+					phandle = <0x209>;
 
 					config {
 						bias-pull-up;
@@ -5869,7 +5869,7 @@
 			pmx_ts_rst_suspend {
 
 				ts_rst_suspend {
-					phandle = <0x210>;
+					phandle = <0x20a>;
 
 					config {
 						bias-pull-down;
@@ -6063,7 +6063,7 @@
 			spi6 {
 
 				cs0_active {
-					phandle = <0x1be>;
+					phandle = <0x1c7>;
 
 					config {
 						bias-disable = <0x00>;
@@ -6078,7 +6078,7 @@
 				};
 
 				cs0_sleep {
-					phandle = <0x1c0>;
+					phandle = <0x1c9>;
 
 					config {
 						bias-disable = <0x00>;
@@ -6093,7 +6093,7 @@
 				};
 
 				spi6_default {
-					phandle = <0x1bd>;
+					phandle = <0x1c6>;
 
 					config {
 						bias-disable = <0x00>;
@@ -6108,7 +6108,7 @@
 				};
 
 				spi6_sleep {
-					phandle = <0x1bf>;
+					phandle = <0x1c8>;
 
 					config {
 						bias-pull-down;
@@ -6174,7 +6174,7 @@
 			tlmm_gpio_key {
 
 				gpio_key_active {
-					phandle = <0x1c8>;
+					phandle = <0x1c4>;
 
 					config {
 						bias-pull-up;
@@ -6268,7 +6268,7 @@
 			};
 
 			ts_int_default {
-				phandle = <0x20a>;
+				phandle = <0x204>;
 
 				config {
 					bias-disable;
@@ -6284,7 +6284,7 @@
 			};
 
 			ts_int_input {
-				phandle = <0x20d>;
+				phandle = <0x207>;
 
 				config {
 					bias-disable;
@@ -6300,7 +6300,7 @@
 			};
 
 			ts_int_output_high {
-				phandle = <0x20b>;
+				phandle = <0x205>;
 
 				config {
 					bias-pull-up;
@@ -6316,7 +6316,7 @@
 			};
 
 			ts_int_output_low {
-				phandle = <0x20c>;
+				phandle = <0x206>;
 
 				config {
 					bias-pull-down;
@@ -6627,11 +6627,11 @@
 		qcom,camera-flash {
 			cell-index = <0x00>;
 			compatible = "qcom,camera-flash";
-			phandle = <0x2f2>;
-			qcom,flash-source = <0x1c1 0x1c2>;
+			phandle = <0x2f1>;
+			qcom,flash-source = <0x1bd 0x1be>;
 			qcom,flash-type = <0x01>;
-			qcom,switch-source = <0x1c5>;
-			qcom,torch-source = <0x1c3 0x1c4>;
+			qcom,switch-source = <0x1c1>;
+			qcom,torch-source = <0x1bf 0x1c0>;
 		};
 
 		qcom,cc-debug@1874000 {
@@ -7535,8 +7535,8 @@
 			clock-names = "scm_core_clk\0scm_iface_clk\0scm_bus_clk\0scm_core_clk_src";
 			clocks = <0x25 0xd390d2 0x25 0x94de4919 0x25 0xd4415c9b 0x25 0x37a21414>;
 			compatible = "qcom,pil-tz-generic";
-			memory-region = <0x1c9>;
-			phandle = <0x2f6>;
+			memory-region = <0x1c5>;
+			phandle = <0x2f5>;
 			qcom,firmware-name = "a506_zap";
 			qcom,mas-crypto = <0x115>;
 			qcom,pas-id = <0x0d>;
@@ -12437,7 +12437,7 @@
 
 					qcom,flash_0 {
 						label = "flash";
-						phandle = <0x1c1>;
+						phandle = <0x1bd>;
 						qcom,current-ma = <0x4b0>;
 						qcom,default-led-trigger = "flash0_trigger";
 						qcom,duration-ms = <0x500>;
@@ -12451,7 +12451,7 @@
 
 					qcom,flash_1 {
 						label = "flash";
-						phandle = <0x1c2>;
+						phandle = <0x1be>;
 						qcom,current-ma = <0x4b0>;
 						qcom,default-led-trigger = "flash1_trigger";
 						qcom,duration-ms = <0x500>;
@@ -12465,7 +12465,7 @@
 
 					qcom,led_switch_0 {
 						label = "switch";
-						phandle = <0x1c5>;
+						phandle = <0x1c1>;
 						qcom,default-led-trigger = "switch0_trigger";
 						qcom,led-mask = <0x03>;
 						qcom,led-name = "led:switch_0";
@@ -12481,7 +12481,7 @@
 
 					qcom,torch_0 {
 						label = "torch";
-						phandle = <0x1c3>;
+						phandle = <0x1bf>;
 						qcom,current-ma = <0x78>;
 						qcom,default-led-trigger = "torch0_trigger";
 						qcom,hdrm-vol-hi-lo-win-mv = <0x64>;
@@ -12494,7 +12494,7 @@
 
 					qcom,torch_1 {
 						label = "torch";
-						phandle = <0x1c4>;
+						phandle = <0x1c0>;
 						qcom,current-ma = <0x12c>;
 						qcom,default-led-trigger = "torch1_trigger";
 						qcom,hdrm-vol-hi-lo-win-mv = <0x64>;
@@ -13250,7 +13250,7 @@
 
 		snfuse@0xa4128 {
 			compatible = "qcom,sn-fuse";
-			phandle = <0x2f5>;
+			phandle = <0x2f4>;
 			reg = <0xa4128 0x04 0xa0120 0x04>;
 			reg-names = "sn-base\0cfi-base";
 		};
@@ -13424,9 +13424,9 @@
 			compatible = "qcom,spi-qup-v2";
 			interrupt-names = "spi_irq\0spi_bam_irq";
 			interrupts = <0x00 0x12c 0x00 0x00 0xef 0x00>;
-			phandle = <0x2f1>;
-			pinctrl-0 = <0x1bd 0x1be>;
-			pinctrl-1 = <0x1bf 0x1c0>;
+			phandle = <0x2f6>;
+			pinctrl-0 = <0x1c6 0x1c7>;
+			pinctrl-1 = <0x1c8 0x1c9>;
 			pinctrl-names = "spi_default\0spi_sleep";
 			qcom,bam-consumer-pipe-index = <0x06>;
 			qcom,bam-producer-pipe-index = <0x07>;

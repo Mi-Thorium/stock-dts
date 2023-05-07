@@ -2478,7 +2478,7 @@
 
 		apc-mem-acc-regulator {
 			compatible = "qcom,mem-acc-regulator";
-			phandle = <0x2c5>;
+			phandle = <0x2c4>;
 			qcom,acc-init-reg-config = <0x01 0xff>;
 			qcom,acc-reg-addr-list = <0x1942138 0x1942130 0x1946004>;
 			qcom,boot-acc-corner = <0x01>;
@@ -2541,9 +2541,9 @@
 		audio_ext_clk_native {
 			#clock-cells = <0x01>;
 			compatible = "qcom,audio-ref-clk";
-			phandle = <0x2c6>;
-			pinctrl-0 = <0x183>;
-			pinctrl-1 = <0x184>;
+			phandle = <0x2c5>;
+			pinctrl-0 = <0x17f>;
+			pinctrl-1 = <0x180>;
 			pinctrl-names = "sleep\0active";
 			qcom,audio-ref-clk-gpio = <0xb1 0x42 0x00>;
 			qcom,codec-mclk-clk-freq = <0xac4400>;
@@ -4361,7 +4361,7 @@
 			cdc_mclk2_pin {
 
 				cdc_mclk2_active {
-					phandle = <0x184>;
+					phandle = <0x180>;
 
 					config {
 						bias-disable;
@@ -4376,7 +4376,7 @@
 				};
 
 				cdc_mclk2_sleep {
-					phandle = <0x183>;
+					phandle = <0x17f>;
 
 					config {
 						bias-pull-down;
@@ -5654,7 +5654,7 @@
 			spi6 {
 
 				cs0_active {
-					phandle = <0x180>;
+					phandle = <0x187>;
 
 					config {
 						bias-disable = <0x00>;
@@ -5669,7 +5669,7 @@
 				};
 
 				cs0_sleep {
-					phandle = <0x182>;
+					phandle = <0x189>;
 
 					config {
 						bias-disable = <0x00>;
@@ -5684,7 +5684,7 @@
 				};
 
 				spi6_default {
-					phandle = <0x17f>;
+					phandle = <0x186>;
 
 					config {
 						bias-disable = <0x00>;
@@ -5699,7 +5699,7 @@
 				};
 
 				spi6_sleep {
-					phandle = <0x181>;
+					phandle = <0x188>;
 
 					config {
 						bias-pull-down;
@@ -6154,11 +6154,11 @@
 		qcom,camera-flash {
 			cell-index = <0x00>;
 			compatible = "qcom,camera-flash";
-			phandle = <0x2c7>;
-			qcom,flash-source = <0x185 0x186>;
+			phandle = <0x2c6>;
+			qcom,flash-source = <0x181 0x182>;
 			qcom,flash-type = <0x01>;
-			qcom,switch-source = <0x189>;
-			qcom,torch-source = <0x187 0x188>;
+			qcom,switch-source = <0x185>;
+			qcom,torch-source = <0x183 0x184>;
 		};
 
 		qcom,cc-debug@1874000 {
@@ -10254,7 +10254,7 @@
 
 					qcom,flash_0 {
 						label = "flash";
-						phandle = <0x185>;
+						phandle = <0x181>;
 						qcom,current-ma = <0x4b0>;
 						qcom,default-led-trigger = "flash0_trigger";
 						qcom,duration-ms = <0x500>;
@@ -10268,7 +10268,7 @@
 
 					qcom,flash_1 {
 						label = "flash";
-						phandle = <0x186>;
+						phandle = <0x182>;
 						qcom,current-ma = <0x4b0>;
 						qcom,default-led-trigger = "flash1_trigger";
 						qcom,duration-ms = <0x500>;
@@ -10282,7 +10282,7 @@
 
 					qcom,led_switch_0 {
 						label = "switch";
-						phandle = <0x189>;
+						phandle = <0x185>;
 						qcom,default-led-trigger = "switch0_trigger";
 						qcom,led-mask = <0x03>;
 						qcom,led-name = "led:switch_0";
@@ -10298,7 +10298,7 @@
 
 					qcom,torch_0 {
 						label = "torch";
-						phandle = <0x187>;
+						phandle = <0x183>;
 						qcom,current-ma = <0x78>;
 						qcom,default-led-trigger = "torch0_trigger";
 						qcom,hdrm-vol-hi-lo-win-mv = <0x64>;
@@ -10311,7 +10311,7 @@
 
 					qcom,torch_1 {
 						label = "torch";
-						phandle = <0x188>;
+						phandle = <0x184>;
 						qcom,current-ma = <0x12c>;
 						qcom,default-led-trigger = "torch1_trigger";
 						qcom,hdrm-vol-hi-lo-win-mv = <0x64>;
@@ -11134,9 +11134,9 @@
 			compatible = "qcom,spi-qup-v2";
 			interrupt-names = "spi_irq\0spi_bam_irq";
 			interrupts = <0x00 0x12c 0x00 0x00 0xef 0x00>;
-			phandle = <0x2c4>;
-			pinctrl-0 = <0x17f 0x180>;
-			pinctrl-1 = <0x181 0x182>;
+			phandle = <0x2c7>;
+			pinctrl-0 = <0x186 0x187>;
+			pinctrl-1 = <0x188 0x189>;
 			pinctrl-names = "spi_default\0spi_sleep";
 			qcom,bam-consumer-pipe-index = <0x06>;
 			qcom,bam-producer-pipe-index = <0x07>;
